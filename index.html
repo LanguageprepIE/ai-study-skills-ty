@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AI Study Skills: an interactive Transition Year course hub.">
+  <title>AI Study Skills – Transition Year</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grid-glow" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home" data-page-link="home" aria-label="AI Study Skills home">
+      <span class="brand-mark" aria-hidden="true">AI</span>
+      <span><strong>AI Study Skills</strong><small>Transition Year</small></span>
+    </a>
+    <button class="button button-outline" id="present-button" type="button">⛶ Present</button>
+  </header>
+
+  <nav class="course-nav" aria-label="Course sections">
+    <div class="tab-list">
+      <button class="tab-button active" type="button" data-page-link="home" aria-controls="home">Home</button>
+      <button class="tab-button" type="button" data-page-link="session" aria-controls="session">Session 1</button>
+      <button class="tab-button" type="button" data-page-link="portfolio" aria-controls="portfolio">Portfolio</button>
+    </div>
+    <span class="ready-label"><span></span> Session 1 ready</span>
+  </nav>
+
+  <main>
+    <section class="page active" id="home" aria-labelledby="course-title">
+      <div class="hero">
+        <div>
+          <p class="eyebrow">✦ Your course. Your thinking.</p>
+          <h1 id="course-title">Learn with AI.<br><span>Do not outsource your brain.</span></h1>
+          <p class="hero-copy">A ten-hour practical module about using artificial intelligence to understand, practise, organise and study — while staying curious, critical and in control.</p>
+          <div class="hero-actions">
+            <button class="button button-primary" type="button" data-page-link="session">Start Session 1 <span aria-hidden="true">→</span></button>
+            <span>◷ 50 minutes today</span>
+          </div>
+        </div>
+        <div class="brain-card">
+          <div class="orbit orbit-one" aria-hidden="true"></div>
+          <div class="orbit orbit-two" aria-hidden="true"></div>
+          <span class="brain-symbol" aria-hidden="true">⌁</span>
+          <p>AI can generate an answer.<br><strong>You create the learning.</strong></p>
+        </div>
+      </div>
+
+      <section class="course-map" aria-labelledby="roadmap-title">
+        <div class="section-heading">
+          <p class="kicker">The roadmap</p>
+          <h2 id="roadmap-title">One module. Three phases.</h2>
+          <p>We will build the detail together as the course progresses.</p>
+        </div>
+        <div class="phase-grid">
+          <article class="phase-card active">
+            <span class="card-number">01</span><span class="card-icon" aria-hidden="true">◫</span>
+            <h3>Learn</h3><p>Prompt, explain, practise, research and verify.</p><small>Sessions 1–6</small>
+          </article>
+          <article class="phase-card">
+            <span class="card-number">02</span><span class="card-icon" aria-hidden="true">⌘</span>
+            <h3>Build</h3><p>Use GitHub Copilot to turn a real school topic into a useful study website.</p><small>Sessions 7–9 · GitHub Pages</small>
+          </article>
+          <article class="phase-card">
+            <span class="card-number">03</span><span class="card-icon" aria-hidden="true">✦</span>
+            <h3>Show</h3><p>Share the result and explain the thinking behind it.</p><small>Session 10</small>
+          </article>
+        </div>
+      </section>
+
+      <section class="principles" aria-labelledby="principles-title">
+        <div class="section-heading compact">
+          <p class="kicker">Our agreement</p><h2 id="principles-title">Three rules from day one</h2>
+        </div>
+        <div class="rule-grid">
+          <article><span aria-hidden="true">▣</span><div><strong>Protect privacy</strong><p>Never enter personal or private information.</p></div></article>
+          <article><span aria-hidden="true">✓</span><div><strong>Check the output</strong><p>Never assume an AI answer is correct.</p></div></article>
+          <article><span aria-hidden="true">◎</span><div><strong>Keep thinking</strong><p>Use AI to support your thinking, not replace it.</p></div></article>
+        </div>
+      </section>
+    </section>
+
+    <section class="page" id="session" aria-labelledby="session-title" hidden>
+      <div class="session-header">
+        <div>
+          <p class="eyebrow"><span class="session-number">01</span> First experiment</p>
+          <h1 id="session-title">Can AI actually<br><span>help you learn?</span></h1>
+          <p>Compare two ways of using Copilot and decide which one produces more learning.</p>
+        </div>
+        <aside class="progress-card">
+          <div><strong id="progress-number">0%</strong><span>lesson complete</span></div>
+          <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="progress-bar"></span></div>
+          <small>The checklist stays only on this computer during this visit.</small>
+        </aside>
+      </div>
+
+      <section class="content-section" aria-labelledby="launch-title">
+        <div class="section-heading compact"><p class="kicker">Begin here</p><h2 id="launch-title">Set up your workspace</h2></div>
+        <div class="launch-grid">
+          <article>
+            <span class="step-number">1</span><h3>Sign in</h3>
+            <p>Use your school Microsoft account. Stay on this page until your teacher begins.</p>
+            <a class="button button-outline" href="https://www.microsoft365.com/" target="_blank" rel="noopener">Open Microsoft 365 ↗</a>
+          </article>
+          <article>
+            <span class="step-number">2</span><h3>Create your portfolio</h3>
+            <p>Open Word, create a blank document and rename it <strong>AI Study Skills Portfolio – First name</strong>.</p>
+            <p class="check-note">✓ Check that it says “Saved to OneDrive”.</p>
+          </article>
+          <article>
+            <span class="step-number">3</span><h3>Open Copilot</h3>
+            <p>Open Copilot in a new tab with the same account. Do not enter personal information.</p>
+            <a class="button button-outline" href="https://m365.cloud.microsoft/chat" target="_blank" rel="noopener">Open Copilot Chat ↗</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="starter-question">
+        <p class="kicker">Before you use AI</p>
+        <h2>If Copilot completes your homework perfectly, have you learned anything?</h2>
+        <p>Write two or three lines in your portfolio. There is no single correct answer.</p>
+      </section>
+
+      <section class="content-section" aria-labelledby="experiment-title">
+        <div class="section-heading">
+          <p class="kicker">The experiment</p>
+          <h2 id="experiment-title">Same topic. Two very different requests.</h2>
+          <p>Keep both Copilot conversations available for comparison.</p>
+        </div>
+        <div class="prompt-grid">
+          <article class="prompt-card prompt-one">
+            <div class="prompt-top"><span>Prompt A</span><small>Ask for an answer</small></div>
+            <blockquote id="prompt-a">Why does Earth have seasons?</blockquote>
+            <button class="button button-outline copy-button" type="button" data-copy-target="prompt-a">⧉ Copy prompt A</button>
+            <div class="prompt-questions"><strong>Notice:</strong><ul><li>Is it easy to understand?</li><li>Does it help you remember?</li><li>Does it make you think?</li><li>What might need verifying?</li></ul></div>
+          </article>
+          <article class="prompt-card prompt-two">
+            <div class="prompt-top"><span>Prompt B</span><small>Ask for a tutor</small></div>
+            <blockquote id="prompt-b">I am a 15-year-old student. Help me learn why Earth has seasons. Start by asking me what I already know. Then explain it in simple language using an everyday analogy. Do not give me more than 120 words at a time. Finish by asking me one question and wait for my answer.</blockquote>
+            <button class="button button-outline copy-button" type="button" data-copy-target="prompt-b">⧉ Copy prompt B</button>
+            <div class="prompt-questions"><strong>Then:</strong><ul><li>Answer Copilot’s question.</li><li>Continue for at least one reply.</li><li>Notice who is doing the thinking.</li></ul></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="compare-panel">
+        <div><p class="kicker">Compare in pairs</p><h2>Which version produced more learning?</h2></div>
+        <ol><li>Which response made you think more?</li><li>What did prompt B do differently?</li><li>Would you trust either answer without checking?</li></ol>
+        <div class="fact-check"><span aria-hidden="true">✓</span><p><strong>Verification checkpoint</strong>The seasons are mainly caused by Earth’s axial tilt — not by Earth moving closer to or farther from the Sun.</p></div>
+      </section>
+
+      <section class="task-checklist" aria-labelledby="checklist-title">
+        <div class="section-heading compact"><p class="kicker">Your progress</p><h2 id="checklist-title">Ready to finish?</h2></div>
+        <div class="checklist-grid">
+          <label><input type="checkbox" class="task-check"> <span>Sign in to Microsoft 365</span></label>
+          <label><input type="checkbox" class="task-check"> <span>Create and rename your Word portfolio</span></label>
+          <label><input type="checkbox" class="task-check"> <span>Open Copilot Chat</span></label>
+          <label><input type="checkbox" class="task-check"> <span>Try both prompts</span></label>
+          <label><input type="checkbox" class="task-check"> <span>Compare the two responses</span></label>
+          <label><input type="checkbox" class="task-check"> <span>Complete your portfolio reflection</span></label>
+        </div>
+      </section>
+
+      <section class="exit-ticket">
+        <div><p class="kicker">Exit ticket</p><h2>Three final lines</h2></div>
+        <ol><li>One useful thing AI can do for a student is…</li><li>One thing a student should not do is…</li><li>Today I used Copilot successfully: <strong>Yes / Partly / No</strong></li></ol>
+      </section>
+
+      <section class="content-section" aria-labelledby="agenda-title">
+        <div class="section-heading compact"><p class="kicker">Today’s route</p><h2 id="agenda-title">50-minute agenda</h2></div>
+        <div class="agenda-list">
+          <article><time>00–08</time><div><strong>Launch</strong><p>Open the course hub and sign in to Microsoft.</p></div></article>
+          <article><time>08–13</time><div><strong>Portfolio</strong><p>Create your Word document and check that it is saved.</p></div></article>
+          <article><time>13–18</time><div><strong>The mission</strong><p>Discover what this module is — and is not — about.</p></div></article>
+          <article><time>18–32</time><div><strong>Copilot experiment</strong><p>Compare an answer prompt with a tutor prompt.</p></div></article>
+          <article><time>32–39</time><div><strong>Think together</strong><p>Discuss what changed and what still needs checking.</p></div></article>
+          <article><time>39–47</time><div><strong>Reflection</strong><p>Record your own learning in the portfolio.</p></div></article>
+          <article><time>47–50</time><div><strong>Exit ticket</strong><p>Finish with one benefit, one risk and an access check.</p></div></article>
+        </div>
+      </section>
+    </section>
+
+    <section class="page" id="portfolio" aria-labelledby="portfolio-title" hidden>
+      <div class="portfolio-hero">
+        <div>
+          <p class="eyebrow">◫ Evidence of your learning</p>
+          <h1 id="portfolio-title">Your AI Study<br><span>Skills Portfolio</span></h1>
+          <p>This document is not a collection of perfect AI answers. It is a record of your prompts, checks, changes and thinking.</p>
+        </div>
+        <aside class="portfolio-name"><span>File name</span><strong>AI Study Skills Portfolio – First name</strong><small>Word Online · Saved to OneDrive</small></aside>
+      </div>
+
+      <section class="portfolio-steps">
+        <article><span>1</span><div><h2>Create</h2><p>Open a blank Word document using your school Microsoft account.</p></div></article>
+        <article><span>2</span><div><h2>Rename</h2><p>Use the exact file name above, with your first name only.</p></div></article>
+        <article><span>3</span><div><h2>Check</h2><p>Make sure Word confirms that the document is saved to OneDrive.</p></div></article>
+        <article><span>4</span><div><h2>Keep</h2><p>Use the same document for every session in this module.</p></div></article>
+      </section>
+
+      <section class="template-card">
+        <div class="template-top">
+          <div><p class="kicker">Session 1 template</p><h2>Copy this into Word</h2></div>
+          <button class="button button-outline copy-button" type="button" data-copy-target="portfolio-template">⧉ Copy full template</button>
+        </div>
+        <pre id="portfolio-template">SESSION 1 — CAN AI HELP ME LEARN?
+
+Opening question
+If Copilot completes your homework perfectly, have you learned anything? Why or why not?
+
+My first prompt
+Why does Earth have seasons?
+
+What I noticed
+• Was the answer easy to understand?
+• Did it help me remember?
+• Did it make me think?
+• What might I need to verify?
+
+My tutor prompt
+[Paste the improved prompt here]
+
+My reflection
+1. One difference between the two responses:
+2. One way AI could help me study:
+3. One risk of using AI for schoolwork:
+4. Something I still want to know about AI:</pre>
+      </section>
+
+      <section class="portfolio-values">
+        <article><strong>Show the process</strong><p>Keep useful prompts, attempts and improvements.</p></article>
+        <article><strong>Be honest</strong><p>Record what worked, what failed and what you changed.</p></article>
+        <article><strong>Think for yourself</strong><p>Your reflection matters more than a polished AI response.</p></article>
+      </section>
+    </section>
+  </main>
+
+  <footer><span>AI Study Skills · Transition Year</span><span>Learn. Check. Create.</span></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
