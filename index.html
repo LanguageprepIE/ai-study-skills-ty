@@ -21,10 +21,11 @@
   <nav class="course-nav" aria-label="Course sections">
     <div class="tab-list">
       <button class="tab-button active" type="button" data-page-link="home" aria-controls="home">Home</button>
-      <button class="tab-button" type="button" data-page-link="session" aria-controls="session">Session 1</button>
+      <button class="tab-button" type="button" data-page-link="session1" aria-controls="session1">Session 1</button>
+      <button class="tab-button" type="button" data-page-link="session2" aria-controls="session2">Session 2</button>
       <button class="tab-button" type="button" data-page-link="portfolio" aria-controls="portfolio">Portfolio</button>
     </div>
-    <span class="ready-label"><span></span> Session 1 ready</span>
+    <span class="ready-label"><span></span> Sessions 1–2 ready</span>
   </nav>
 
   <main>
@@ -35,7 +36,7 @@
           <h1 id="course-title">Learn with AI.<br><span>Do not outsource your brain.</span></h1>
           <p class="hero-copy">A ten-hour practical module about using artificial intelligence to understand, practise, organise and study — while staying curious, critical and in control.</p>
           <div class="hero-actions">
-            <button class="button button-primary" type="button" data-page-link="session">Start Session 1 <span aria-hidden="true">→</span></button>
+            <button class="button button-primary" type="button" data-page-link="session2">Continue to Session 2 <span aria-hidden="true">→</span></button>
             <span>◷ 50 minutes today</span>
           </div>
         </div>
@@ -81,16 +82,16 @@
       </section>
     </section>
 
-    <section class="page" id="session" aria-labelledby="session-title" hidden>
+    <section class="page" id="session1" aria-labelledby="session1-title" hidden>
       <div class="session-header">
         <div>
           <p class="eyebrow"><span class="session-number">01</span> First experiment</p>
-          <h1 id="session-title">Can AI actually<br><span>help you learn?</span></h1>
+          <h1 id="session1-title">Can AI actually<br><span>help you learn?</span></h1>
           <p>Compare two ways of using Copilot and decide which one produces more learning.</p>
         </div>
-        <aside class="progress-card">
-          <div><strong id="progress-number">0%</strong><span>lesson complete</span></div>
-          <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="progress-bar"></span></div>
+        <aside class="progress-card" data-progress-card="session1">
+          <div><strong data-progress-number>0%</strong><span>lesson complete</span></div>
+          <div class="progress-track" data-progress-track role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span data-progress-bar></span></div>
           <small>The checklist stays only on this computer during this visit.</small>
         </aside>
       </div>
@@ -153,12 +154,12 @@
       <section class="task-checklist" aria-labelledby="checklist-title">
         <div class="section-heading compact"><p class="kicker">Your progress</p><h2 id="checklist-title">Ready to finish?</h2></div>
         <div class="checklist-grid">
-          <label><input type="checkbox" class="task-check"> <span>Sign in to Microsoft 365</span></label>
-          <label><input type="checkbox" class="task-check"> <span>Create and rename your Word portfolio</span></label>
-          <label><input type="checkbox" class="task-check"> <span>Open Copilot Chat</span></label>
-          <label><input type="checkbox" class="task-check"> <span>Try both prompts</span></label>
-          <label><input type="checkbox" class="task-check"> <span>Compare the two responses</span></label>
-          <label><input type="checkbox" class="task-check"> <span>Complete your portfolio reflection</span></label>
+          <label><input type="checkbox" class="task-check" data-task-group="session1"> <span>Sign in to Microsoft 365</span></label>
+          <label><input type="checkbox" class="task-check" data-task-group="session1"> <span>Create and rename your Word portfolio</span></label>
+          <label><input type="checkbox" class="task-check" data-task-group="session1"> <span>Open Copilot Chat</span></label>
+          <label><input type="checkbox" class="task-check" data-task-group="session1"> <span>Try both prompts</span></label>
+          <label><input type="checkbox" class="task-check" data-task-group="session1"> <span>Compare the two responses</span></label>
+          <label><input type="checkbox" class="task-check" data-task-group="session1"> <span>Complete your portfolio reflection</span></label>
         </div>
       </section>
 
@@ -177,6 +178,173 @@
           <article><time>32–39</time><div><strong>Think together</strong><p>Discuss what changed and what still needs checking.</p></div></article>
           <article><time>39–47</time><div><strong>Reflection</strong><p>Record your own learning in the portfolio.</p></div></article>
           <article><time>47–50</time><div><strong>Exit ticket</strong><p>Finish with one benefit, one risk and an access check.</p></div></article>
+        </div>
+      </section>
+    </section>
+
+    <section class="page" id="session2" aria-labelledby="session2-title" hidden>
+      <div class="session-header">
+        <div>
+          <p class="eyebrow"><span class="session-number">02</span> Prompt adventure</p>
+          <h1 id="session2-title">Enter the<br><span>Knowledge Quest.</span></h1>
+          <p>Build a short educational RPG, play it and discover which instructions turn a basic request into an interactive learning experience.</p>
+        </div>
+        <aside class="progress-card" data-progress-card="session2">
+          <div><strong data-progress-number>0%</strong><span>lesson complete</span></div>
+          <div class="progress-track" data-progress-track role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span data-progress-bar></span></div>
+          <small>Your ticks are temporary. Your portfolio is the evidence that matters.</small>
+        </aside>
+      </div>
+
+      <section class="content-section" aria-labelledby="catchup-title">
+        <div class="section-heading compact"><p class="kicker">First eight minutes</p><h2 id="catchup-title">Create your course portfolio</h2></div>
+        <div class="launch-grid">
+          <article>
+            <span class="step-number">1</span><h3>Open Word</h3>
+            <p>Sign in with your school Microsoft account and create one blank Word document.</p>
+            <a class="button button-outline" href="https://www.microsoft365.com/launch/word" target="_blank" rel="noopener">Open Word Online ↗</a>
+          </article>
+          <article>
+            <span class="step-number">2</span><h3>Name and save it</h3>
+            <p>Rename it <strong>AI Study Skills Portfolio – First name</strong> and check that it is saved to OneDrive.</p>
+            <button class="button button-outline" type="button" data-page-link="portfolio">Open portfolio templates →</button>
+          </article>
+          <article>
+            <span class="step-number">3</span><h3>Open Copilot</h3>
+            <p>Try Copilot Chat first. If access is blocked, use the Copilot panel in the top-right corner of Microsoft Edge.</p>
+            <a class="button button-outline" href="https://m365.cloud.microsoft/chat" target="_blank" rel="noopener">Open Copilot Chat ↗</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="starter-question">
+        <p class="kicker">Before the adventure</p>
+        <h2>How could a story make a difficult school topic easier to learn?</h2>
+        <p>Discuss with a partner. Think about choices, challenges, feedback and memory.</p>
+      </section>
+
+      <section class="content-section" aria-labelledby="ingredients-title">
+        <div class="section-heading">
+          <p class="kicker">The anatomy of the prompt</p>
+          <h2 id="ingredients-title">Five instructions create the experience.</h2>
+          <p>A long prompt is not automatically a good prompt. Each instruction needs a purpose.</p>
+        </div>
+        <div class="ingredient-grid">
+          <article><span>01</span><h3>Goal</h3><p>Define exactly what the learner needs to understand or practise.</p></article>
+          <article><span>02</span><h3>Context</h3><p>Give the subject, topic, age and current level.</p></article>
+          <article><span>03</span><h3>Format</h3><p>Ask for four short scenes and one question at a time.</p></article>
+          <article><span>04</span><h3>Rules</h3><p>Control hints, health points, answers and length.</p></article>
+          <article><span>05</span><h3>Interaction</h3><p>Make Copilot wait and react to the learner’s choices.</p></article>
+        </div>
+      </section>
+
+      <section class="quest-builder" aria-labelledby="builder-title">
+        <div class="builder-heading">
+          <div><p class="kicker">The Knowledge Quest</p><h2 id="builder-title">Create your educational RPG</h2></div>
+          <span class="builder-badge">No coding required</span>
+        </div>
+
+        <div class="builder-layout">
+          <form class="builder-controls" id="quest-builder">
+            <label>Subject
+              <select id="quest-subject">
+                <option value="Spanish">Spanish</option>
+                <option value="English">English</option>
+                <option value="History">History</option>
+                <option value="Science">Science</option>
+                <option value="Maths">Maths</option>
+                <option value="Other">Another subject</option>
+              </select>
+            </label>
+            <label>Topic
+              <select id="quest-topic" aria-describedby="custom-topic-note"></select>
+            </label>
+            <label id="custom-topic-wrap" hidden>Your own topic
+              <input id="quest-custom-topic" type="text" maxlength="80" placeholder="Type a school topic">
+              <small id="custom-topic-note">Use a specific topic, not only the subject name.</small>
+            </label>
+            <label>Character
+              <select id="quest-character">
+                <option>a time traveller</option>
+                <option>a detective</option>
+                <option>a space pilot</option>
+                <option>a medieval healer</option>
+                <option>an apprentice wizard</option>
+                <option>an explorer</option>
+              </select>
+            </label>
+            <label>World
+              <select id="quest-world">
+                <option>a mysterious library</option>
+                <option>a city in the future</option>
+                <option>an ancient temple</option>
+                <option>a space station</option>
+                <option>a medieval kingdom</option>
+                <option>a secret research laboratory</option>
+              </select>
+            </label>
+            <label>Starting difficulty
+              <select id="quest-difficulty">
+                <option>easy</option>
+                <option selected>medium</option>
+                <option>challenging</option>
+              </select>
+            </label>
+            <button class="button button-primary" id="build-quest" type="button">✦ Build my RPG prompt</button>
+          </form>
+
+          <div class="builder-output">
+            <div class="output-top"><span>Your generated prompt</span><small>Edit it if you can improve it.</small></div>
+            <pre id="quest-prompt" tabindex="0">Choose your options, then press “Build my RPG prompt”.</pre>
+            <button class="button button-outline copy-button" id="copy-quest" type="button" data-copy-target="quest-prompt" disabled>⧉ Copy to Copilot</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" aria-labelledby="topic-bank-title">
+        <div class="section-heading compact"><p class="kicker">Need inspiration?</p><h2 id="topic-bank-title">The topic bank</h2></div>
+        <div class="topic-bank">
+          <article><h3>Spanish</h3><p>ser and estar · daily routine · describing people · school vocabulary</p></article>
+          <article><h3>English</h3><p>poetic techniques · persuasive language · character and theme · paragraph writing</p></article>
+          <article><h3>History</h3><p>World War I · Irish independence · the Industrial Revolution · the Cold War</p></article>
+          <article><h3>Science</h3><p>photosynthesis · cells · forces and energy · genetics</p></article>
+          <article><h3>Maths</h3><p>linear equations · percentages · Pythagoras · probability</p></article>
+        </div>
+      </section>
+
+      <section class="compare-panel">
+        <div><p class="kicker">After you play</p><h2>Improve the game master.</h2></div>
+        <ol><li>Play at least two scenes.</li><li>Identify one thing that helped you learn.</li><li>Identify one weakness in the questions or story.</li><li>Send one precise repair instruction.</li></ol>
+        <div class="fact-check"><span aria-hidden="true">!</span><p><strong>Repair prompt</strong><span id="repair-prompt">The story is interesting, but the questions are too easy. Keep the same character and setting, but increase the academic difficulty.</span></p><button class="mini-copy" type="button" data-copy-target="repair-prompt">Copy</button></div>
+      </section>
+
+      <section class="task-checklist" aria-labelledby="checklist2-title">
+        <div class="section-heading compact"><p class="kicker">Your progress</p><h2 id="checklist2-title">Session 2 checklist</h2></div>
+        <div class="checklist-grid">
+          <label><input type="checkbox" class="task-check" data-task-group="session2"> <span>Create and save the course portfolio</span></label>
+          <label><input type="checkbox" class="task-check" data-task-group="session2"> <span>Identify the five prompt instructions</span></label>
+          <label><input type="checkbox" class="task-check" data-task-group="session2"> <span>Build an RPG prompt about a real topic</span></label>
+          <label><input type="checkbox" class="task-check" data-task-group="session2"> <span>Play at least two scenes</span></label>
+          <label><input type="checkbox" class="task-check" data-task-group="session2"> <span>Send one repair instruction</span></label>
+          <label><input type="checkbox" class="task-check" data-task-group="session2"> <span>Complete the Session 2 portfolio entry</span></label>
+        </div>
+      </section>
+
+      <section class="exit-ticket">
+        <div><p class="kicker">Exit ticket</p><h2>One final decision</h2></div>
+        <ol><li>The instruction that made the RPG work best was…</li><li>I know this because…</li></ol>
+      </section>
+
+      <section class="content-section" aria-labelledby="agenda2-title">
+        <div class="section-heading compact"><p class="kicker">Today’s route</p><h2 id="agenda2-title">50-minute agenda</h2></div>
+        <div class="agenda-list">
+          <article><time>00–08</time><div><strong>Portfolio catch-up</strong><p>Create, name and save the Word portfolio.</p></div></article>
+          <article><time>08–13</time><div><strong>Recall</strong><p>Identify why Session 1’s tutor prompt worked better.</p></div></article>
+          <article><time>13–20</time><div><strong>Live quest</strong><p>Play one projected scene together and inspect the prompt.</p></div></article>
+          <article><time>20–27</time><div><strong>Prompt anatomy</strong><p>Find the goal, context, format, rules and interaction.</p></div></article>
+          <article><time>27–39</time><div><strong>Build and play</strong><p>Create a personal Knowledge Quest and play two scenes.</p></div></article>
+          <article><time>39–44</time><div><strong>Repair</strong><p>Identify one weakness and give Copilot a precise instruction.</p></div></article>
+          <article><time>44–50</time><div><strong>Portfolio and exit</strong><p>Save the evidence and explain which instruction mattered.</p></div></article>
         </div>
       </section>
     </section>
@@ -225,6 +393,38 @@ My reflection
 2. One way AI could help me study:
 3. One risk of using AI for schoolwork:
 4. Something I still want to know about AI:</pre>
+      </section>
+
+      <section class="template-card template-card-secondary">
+        <div class="template-top">
+          <div><p class="kicker">Session 2 template</p><h2>Copy this below Session 1</h2></div>
+          <button class="button button-outline copy-button" type="button" data-copy-target="portfolio-template-2">⧉ Copy full template</button>
+        </div>
+        <pre id="portfolio-template-2">SESSION 2 — THE KNOWLEDGE QUEST
+
+My choices
+Subject:
+Topic:
+Character:
+World:
+Starting difficulty:
+
+My RPG prompt
+[Paste your generated prompt here]
+
+Evidence from the adventure
+• One question Copilot asked me:
+• My answer:
+• The feedback or hint I received:
+
+My repair instruction
+[Paste the instruction you used to improve the adventure]
+
+My reflection
+1. The instruction that made the RPG work best was:
+2. One way the story helped — or did not help — my learning:
+3. One improvement I made after testing:
+4. One fact or explanation I would still need to verify:</pre>
       </section>
 
       <section class="portfolio-values">
