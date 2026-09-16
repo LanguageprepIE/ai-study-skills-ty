@@ -23,9 +23,10 @@
       <button class="tab-button active" type="button" data-page-link="home" aria-controls="home">Home</button>
       <button class="tab-button" type="button" data-page-link="session1" aria-controls="session1">Session 1</button>
       <button class="tab-button" type="button" data-page-link="session2" aria-controls="session2">Session 2</button>
+      <button class="tab-button" type="button" data-page-link="session3" aria-controls="session3">Session 3</button>
       <button class="tab-button" type="button" data-page-link="portfolio" aria-controls="portfolio">Portfolio</button>
     </div>
-    <span class="ready-label"><span></span> Sessions 1–2 ready</span>
+    <span class="ready-label"><span></span> Sessions 1–3 ready</span>
   </nav>
 
   <main>
@@ -38,6 +39,7 @@
           <div class="hero-actions" aria-label="Choose your current session">
             <button class="button button-primary" type="button" data-page-link="session1">Start Session 1 <span aria-hidden="true">→</span></button>
             <button class="button button-outline" type="button" data-page-link="session2">Continue to Session 2 <span aria-hidden="true">→</span></button>
+            <button class="button button-outline" type="button" data-page-link="session3">Open Session 3 <span aria-hidden="true">→</span></button>
           </div>
         </div>
         <div class="brain-card">
@@ -349,6 +351,100 @@
       </section>
     </section>
 
+    <section class="page" id="session3" aria-labelledby="session3-title" hidden>
+      <div class="session-header">
+        <div>
+          <p class="eyebrow"><span class="session-number">03</span> One source set. Many ways to learn.</p>
+          <h1 id="session3-title">Enter the<br><span>Study Toolkit Lab.</span></h1>
+          <p>Use Gemini Notebook to find useful sources, check what you import and transform one topic into two different study tools.</p>
+        </div>
+        <aside class="progress-card" data-progress-card="session3">
+          <div><strong data-progress-number>0%</strong><span>lesson complete</span></div>
+          <div class="progress-track" data-progress-track role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span data-progress-bar></span></div>
+          <small>Work with a partner if either person cannot access Gemini Notebook.</small>
+        </aside>
+      </div>
+
+      <section class="demo-banner" aria-labelledby="demo-title">
+        <div><p class="kicker">Teacher demonstration · first 10 minutes</p><h2 id="demo-title">Watch one research question become a study kit.</h2></div>
+        <ol><li>Compare Fast Research with Deep Research.</li><li>Inspect the sources before importing them.</li><li>Preview two or three outputs: a mind map, infographic, quiz, audio or video overview.</li></ol>
+        <p class="age-note"><strong>Important:</strong> Deep Research is for users aged 18+. It is demonstrated by the teacher only.</p>
+      </section>
+
+      <section class="content-section" aria-labelledby="access-title">
+        <div class="section-heading"><p class="kicker">Access checkpoint</p><h2 id="access-title">Can you open Gemini Notebook?</h2><p>You need a Google Account, but the email address does not need to be Gmail.</p></div>
+        <div class="access-grid">
+          <article class="access-card access-go">
+            <span class="step-number">A</span><h3>I am 16 or older</h3>
+            <ol><li>Open Gemini Notebook.</li><li>Try signing in with your school email.</li><li>If Google says there is no account, choose <strong>Create account</strong>, then use your existing school email address.</li><li>Check your Microsoft school inbox for any verification message.</li></ol>
+            <a class="button button-primary" href="https://notebook.google.com/" target="_blank" rel="noopener">Open Gemini Notebook ↗</a>
+          </article>
+          <article class="access-card access-pair">
+            <span class="step-number">B</span><h3>I am under 16 or access fails</h3>
+            <p>Do not create an account. Sit with a classmate who already has access and complete the investigation together.</p>
+            <p><strong>Never share a password.</strong> One student controls the account; both students make the choices and keep their own portfolio evidence.</p>
+          </article>
+          <article class="access-card access-stop">
+            <span class="step-number">!</span><h3>Stop if verification becomes personal</h3>
+            <p>Google may refuse the school address or request additional verification. Do not enter a personal phone number just for this lesson. Join a partner instead.</p>
+            <p class="check-note">There is no temporary guest mode for creating a notebook.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section" aria-labelledby="mission-title">
+        <div class="section-heading compact"><p class="kicker">Choose one investigation</p><h2 id="mission-title">Your topic mission</h2></div>
+        <div class="mission-grid">
+          <article><span>Spanish</span><h3>The Camino de Santiago</h3><p id="research-spanish">How has the Camino de Santiago influenced culture and tourism in northern Spain?</p><button class="mini-copy" type="button" data-copy-target="research-spanish">Copy question</button></article>
+          <article><span>English</span><h3>Gothic tension</h3><p id="research-english">How do Gothic writers create tension through setting, language and uncertainty?</p><button class="mini-copy" type="button" data-copy-target="research-english">Copy question</button></article>
+          <article><span>History</span><h3>The First World War</h3><p id="research-history">What were the main long-term and short-term causes of the First World War?</p><button class="mini-copy" type="button" data-copy-target="research-history">Copy question</button></article>
+          <article><span>Science</span><h3>Sleep and memory</h3><p id="research-science">How does sleep affect memory, concentration and learning in teenagers?</p><button class="mini-copy" type="button" data-copy-target="research-science">Copy question</button></article>
+        </div>
+      </section>
+
+      <section class="lab-route" aria-labelledby="route-title">
+        <div class="section-heading"><p class="kicker">Your guided investigation</p><h2 id="route-title">Complete the four lab stations.</h2><p>Use <strong>Fast Research</strong>. Do not activate Deep Research.</p></div>
+        <div class="station-list">
+          <article><span class="station-number">01</span><div><h3>Find</h3><p>Paste your research question into <strong>Find sources from the web</strong>. Use Fast Research and open the results list before importing anything.</p></div></article>
+          <article><span class="station-number">02</span><div><h3>Filter</h3><p>Choose three useful sources. Look for a clear author or organisation, a relevant title and information that directly answers your question. Avoid importing a result only because it appears first.</p></div></article>
+          <article><span class="station-number">03</span><div><h3>Transform</h3><p>Create a <strong>Mind Map</strong>, then choose one contrasting tool: <strong>Infographic, Quiz, Flashcards, Audio Overview or Video Overview</strong>. Generation may take time, so continue to Station 4 while you wait.</p></div></article>
+          <article><span class="station-number">04</span><div><h3>Trace</h3><p>Ask one question in the notebook chat. Open at least one citation and check that the source really supports the answer.</p><blockquote id="citation-prompt">Using only my selected sources, explain the three most important ideas about this topic for a 15-year-old student. Add citations so I can check each idea.</blockquote><button class="button button-outline copy-button" type="button" data-copy-target="citation-prompt">⧉ Copy chat question</button></div></article>
+        </div>
+      </section>
+
+      <section class="compare-panel">
+        <div><p class="kicker">Tool showdown</p><h2>Which format helped you learn best?</h2></div>
+        <ol><li>Which tool made the topic easiest to understand?</li><li>Which tool would be best for remembering it tomorrow?</li><li>What did one tool include that the other missed?</li><li>Did the citation genuinely support the answer?</li></ol>
+        <div class="fact-check"><span aria-hidden="true">✓</span><p><strong>The rule</strong>A polished output is not evidence that it is accurate. Trace important claims back to the original source.</p></div>
+      </section>
+
+      <section class="task-checklist" aria-labelledby="checklist3-title">
+        <div class="section-heading compact"><p class="kicker">Your progress</p><h2 id="checklist3-title">Session 3 checklist</h2></div>
+        <div class="checklist-grid">
+          <label><input type="checkbox" class="task-check" data-task-group="session3"> <span>Complete the access check or join a partner</span></label>
+          <label><input type="checkbox" class="task-check" data-task-group="session3"> <span>Choose one topic mission</span></label>
+          <label><input type="checkbox" class="task-check" data-task-group="session3"> <span>Use Fast Research and inspect the results</span></label>
+          <label><input type="checkbox" class="task-check" data-task-group="session3"> <span>Select three relevant sources</span></label>
+          <label><input type="checkbox" class="task-check" data-task-group="session3"> <span>Create and compare two study tools</span></label>
+          <label><input type="checkbox" class="task-check" data-task-group="session3"> <span>Open and verify at least one citation</span></label>
+          <label><input type="checkbox" class="task-check" data-task-group="session3"> <span>Complete the Session 3 portfolio entry</span></label>
+        </div>
+      </section>
+
+      <section class="content-section" aria-labelledby="agenda3-title">
+        <div class="section-heading compact"><p class="kicker">Today’s route</p><h2 id="agenda3-title">50-minute agenda</h2></div>
+        <div class="agenda-list">
+          <article><time>00–10</time><div><strong>Teacher research demo</strong><p>See Deep Research and two or three study outputs in action.</p></div></article>
+          <article><time>10–17</time><div><strong>Access and pair up</strong><p>Open Gemini Notebook safely or join a partner.</p></div></article>
+          <article><time>17–26</time><div><strong>Fast Research</strong><p>Choose a mission, inspect the results and import three sources.</p></div></article>
+          <article><time>26–37</time><div><strong>Build the toolkit</strong><p>Create a mind map and one contrasting study tool.</p></div></article>
+          <article><time>37–43</time><div><strong>Trace the evidence</strong><p>Ask a question, open a citation and verify the claim.</p></div></article>
+          <article><time>43–48</time><div><strong>Tool showdown</strong><p>Compare the two formats and save portfolio evidence.</p></div></article>
+          <article><time>48–50</time><div><strong>Exit decision</strong><p>Name the best tool for your learning and explain why.</p></div></article>
+        </div>
+      </section>
+    </section>
+
     <section class="page" id="portfolio" aria-labelledby="portfolio-title" hidden>
       <div class="portfolio-hero">
         <div>
@@ -427,6 +523,39 @@ My reflection
 4. One fact or explanation I would still need to verify:</pre>
       </section>
 
+      <section class="template-card template-card-tertiary">
+        <div class="template-top">
+          <div><p class="kicker">Session 3 template</p><h2>Copy this below Session 2</h2></div>
+          <button class="button button-outline copy-button" type="button" data-copy-target="portfolio-template-3">⧉ Copy full template</button>
+        </div>
+        <pre id="portfolio-template-3">SESSION 3 — THE STUDY TOOLKIT LAB
+
+My investigation
+Subject and topic:
+Research question:
+
+My selected sources
+1. Title and organisation:
+2. Title and organisation:
+3. Title and organisation:
+
+My two study tools
+Tool 1:
+Tool 2:
+
+Citation check
+• One claim from the chat:
+• The source I opened:
+• Did the source genuinely support the claim? Explain:
+
+My comparison
+1. The tool that helped me understand best was:
+2. The tool that would help me remember best was:
+3. One important difference between the two outputs:
+4. One limitation or mistake I noticed:
+5. My final verdict: Gemini Notebook was / was not useful because:</pre>
+      </section>
+
       <section class="portfolio-values">
         <article><strong>Show the process</strong><p>Keep useful prompts, attempts and improvements.</p></article>
         <article><strong>Be honest</strong><p>Record what worked, what failed and what you changed.</p></article>
@@ -440,4 +569,3 @@ My reflection
   <script src="script.js"></script>
 </body>
 </html>
-
