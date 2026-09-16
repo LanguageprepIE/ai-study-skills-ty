@@ -24,9 +24,10 @@
       <button class="tab-button" type="button" data-page-link="session1" aria-controls="session1">Session 1</button>
       <button class="tab-button" type="button" data-page-link="session2" aria-controls="session2">Session 2</button>
       <button class="tab-button" type="button" data-page-link="session3" aria-controls="session3">Session 3</button>
+      <button class="tab-button" type="button" data-page-link="session4" aria-controls="session4">Session 4</button>
       <button class="tab-button" type="button" data-page-link="portfolio" aria-controls="portfolio">Portfolio</button>
     </div>
-    <span class="ready-label"><span></span> Sessions 1–3 ready</span>
+    <span class="ready-label"><span></span> Sessions 1–4 ready</span>
   </nav>
 
   <main>
@@ -40,6 +41,7 @@
             <button class="button button-primary" type="button" data-page-link="session1">Start Session 1 <span aria-hidden="true">→</span></button>
             <button class="button button-outline" type="button" data-page-link="session2">Continue to Session 2 <span aria-hidden="true">→</span></button>
             <button class="button button-outline" type="button" data-page-link="session3">Open Session 3 <span aria-hidden="true">→</span></button>
+            <button class="button button-outline" type="button" data-page-link="session4">Open Session 4 <span aria-hidden="true">→</span></button>
           </div>
         </div>
         <div class="brain-card">
@@ -445,6 +447,141 @@
       </section>
     </section>
 
+
+    <section class="page" id="session4" aria-labelledby="session4-title" hidden>
+      <div class="session-header">
+        <div>
+          <p class="eyebrow"><span class="session-number">04</span> From notes to retrieval</p>
+          <h1 id="session4-title">Build your<br><span>AI Study Games.</span></h1>
+          <p>Turn verified information into two different retrieval activities, test them with another team and publish the links in your portfolio.</p>
+        </div>
+        <aside class="progress-card" data-progress-card="session4">
+          <div><strong data-progress-number>0%</strong><span>lesson complete</span></div>
+          <div class="progress-track" data-progress-track role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span data-progress-bar></span></div>
+          <small>The goal is not to generate more content. The goal is to practise remembering.</small>
+        </aside>
+      </div>
+
+      <section class="starter-question">
+        <p class="kicker">Memory challenge · books closed</p>
+        <h2>Can you recall five ideas from Session 3 without looking?</h2>
+        <p>Write what you remember first. Then check your notes. The gap between the two is what retrieval practice reveals.</p>
+      </section>
+
+      <section class="demo-banner" aria-labelledby="demo4-title">
+        <div><p class="kicker">Teacher demonstration · first 7 minutes</p><h2 id="demo4-title">One verified text. Two very different games.</h2></div>
+        <ol><li>Generate a quick recall activity in Wordwall.</li><li>Turn the same source into a deeper challenge in Educaplay.</li><li>Publish, copy the learner link and test it in a private window.</li></ol>
+        <p class="age-note"><strong>Today’s rule:</strong> AI drafts the activity. You check every answer, improve the questions and decide whether the game genuinely helps someone learn.</p>
+      </section>
+
+      <section class="content-section" aria-labelledby="source4-title">
+        <div class="section-heading"><p class="kicker">Step 1 · Prepare the source</p><h2 id="source4-title">Begin with information you have already checked.</h2><p>Use one topic and at least one reliable source from Session 3. Work in pairs if an account or sign-in fails.</p></div>
+        <div class="source-strip">
+          <article><span>1</span><div><strong>Choose</strong><p>Select one clear subtopic — not an entire subject.</p></div></article>
+          <article><span>2</span><div><strong>Reduce</strong><p>Copy 8–12 essential facts into a clean note. Do not paste a whole chapter.</p></div></article>
+          <article><span>3</span><div><strong>Protect</strong><p>Remove names, email addresses and personal information before using any external tool.</p></div></article>
+          <article><span>4</span><div><strong>Keep the source</strong><p>Save its title and link. You will add both to your portfolio.</p></div></article>
+        </div>
+      </section>
+
+      <section class="activity-lab" aria-labelledby="activity-lab-title">
+        <div class="section-heading"><p class="kicker">Steps 2–3 · Creation lab</p><h2 id="activity-lab-title">Build two activities with different jobs.</h2><p>Do not create the same quiz twice. One should test rapid recall; the other should require deeper thinking.</p></div>
+        <div class="tool-lab-grid">
+          <article class="study-tool-card wordwall-card">
+            <div class="tool-card-top"><span>Tool A</span><strong>Quick recall</strong></div>
+            <h3>Wordwall Sprint</h3>
+            <p>Create one short activity using 8–10 key facts. Choose a format such as Match up, Flashcards, Quiz or Group sort.</p>
+            <ol>
+              <li>Create an account with your school email if permitted, or work with a partner.</li>
+              <li>Choose <strong>Create Activity</strong> and an appropriate template.</li>
+              <li>Use <strong>Generate with AI</strong> if it appears on your account.</li>
+              <li>Check every question, answer and distractor before publishing.</li>
+            </ol>
+            <a class="button button-primary" href="https://wordwall.net/" target="_blank" rel="noopener">Open Wordwall ↗</a>
+            <div class="fallback-box">
+              <strong>No AI button?</strong>
+              <p>Use Copilot to draft the content, then paste it into Wordwall manually.</p>
+              <blockquote id="wordwall-fallback">Using only the verified notes below, create 8 concise question-and-answer pairs for retrieval practice. Keep each answer under 12 words. Include no information that is not in my notes. After the questions, flag anything that may be ambiguous.
+
+[PASTE YOUR VERIFIED NOTES AND SOURCE TITLE]</blockquote>
+              <button class="mini-copy" type="button" data-copy-target="wordwall-fallback">Copy fallback prompt</button>
+            </div>
+          </article>
+
+          <article class="study-tool-card educaplay-card">
+            <div class="tool-card-top"><span>Tool B</span><strong>Deeper thinking</strong></div>
+            <h3>Educaplay Challenge</h3>
+            <p>Use Ray, the AI assistant, to create a different kind of challenge from the same verified information.</p>
+            <ol>
+              <li>Choose a format that suits the topic: Fill in the Blanks, Line Up, Matching, Map Quiz, Dialogue or Video Quiz.</li>
+              <li>Give Ray your verified text rather than only a broad topic.</li>
+              <li>Review and edit the generated activity.</li>
+              <li>Publish it and use <strong>Share</strong> to copy the public game link.</li>
+            </ol>
+            <a class="button button-primary" href="https://www.educaplay.com/" target="_blank" rel="noopener">Open Educaplay ↗</a>
+            <div class="prompt-mini">
+              <strong>Instruction for Ray</strong>
+              <blockquote id="educaplay-instruction">Create a short retrieval activity using only the information in this text. Focus on the most important ideas, include plausible distractors and give clear feedback. Do not add facts that are not in the source.</blockquote>
+              <button class="mini-copy" type="button" data-copy-target="educaplay-instruction">Copy instruction</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="quality-gate" aria-labelledby="quality-title">
+        <div><p class="kicker">Step 4 · Human quality control</p><h2 id="quality-title">Do not publish the first AI draft.</h2><p>Inspect both activities and make at least one meaningful improvement.</p></div>
+        <div class="quality-grid">
+          <article><span>✓</span><strong>Accuracy</strong><p>Every correct answer is supported by the source.</p></article>
+          <article><span>?</span><strong>Clarity</strong><p>There is only one defensible answer unless multiple answers are intended.</p></article>
+          <article><span>↗</span><strong>Challenge</strong><p>The wrong answers are plausible, not ridiculous.</p></article>
+          <article><span>◎</span><strong>Learning</strong><p>The activity tests important knowledge, not trivia.</p></article>
+        </div>
+      </section>
+
+      <section class="share-lab" aria-labelledby="share-title">
+        <div class="section-heading compact"><p class="kicker">Step 5 · Publish and prove it works</p><h2 id="share-title">A saved activity is not yet a shareable activity.</h2></div>
+        <div class="share-route">
+          <article><span>01</span><h3>Publish</h3><p>Finish and publish each activity. Use a title without your full name.</p></article>
+          <article><span>02</span><h3>Copy the play link</h3><p>Choose <strong>Share</strong> and copy the link intended for players — not an editing link.</p></article>
+          <article><span>03</span><h3>Test privately</h3><p>Open a private or InPrivate window, paste the link and check that the activity loads.</p></article>
+          <article><span>04</span><h3>Add to portfolio</h3><p>Paste both working links, your source and the improvement you made.</p></article>
+        </div>
+        <p class="public-warning"><strong>Privacy check:</strong> Free activities may be public. Do not include surnames, photographs, school email addresses or personal information.</p>
+      </section>
+
+      <section class="peer-test" aria-labelledby="peer-title">
+        <div><p class="kicker">Peer test</p><h2 id="peer-title">Swap links. Play without help.</h2></div>
+        <ol><li>Could you open both links without signing in?</li><li>Was every question understandable?</li><li>Did you find a possible error or ambiguous answer?</li><li>Which activity made you retrieve more from memory?</li></ol>
+        <div class="fact-check"><span aria-hidden="true">✓</span><p><strong>Required repair</strong>Use your partner’s feedback to improve at least one question, answer, hint or distractor before completing the portfolio entry.</p></div>
+      </section>
+
+      <section class="task-checklist" aria-labelledby="checklist4-title">
+        <div class="section-heading compact"><p class="kicker">Your progress</p><h2 id="checklist4-title">Session 4 checklist</h2></div>
+        <div class="checklist-grid">
+          <label><input type="checkbox" class="task-check" data-task-group="session4"> <span>Choose verified notes and keep the source link</span></label>
+          <label><input type="checkbox" class="task-check" data-task-group="session4"> <span>Create one quick-recall Wordwall activity</span></label>
+          <label><input type="checkbox" class="task-check" data-task-group="session4"> <span>Create one different Educaplay activity</span></label>
+          <label><input type="checkbox" class="task-check" data-task-group="session4"> <span>Check every generated answer against the source</span></label>
+          <label><input type="checkbox" class="task-check" data-task-group="session4"> <span>Test another team’s links and receive feedback</span></label>
+          <label><input type="checkbox" class="task-check" data-task-group="session4"> <span>Repair at least one weakness</span></label>
+          <label><input type="checkbox" class="task-check" data-task-group="session4"> <span>Test both public links and add them to the portfolio</span></label>
+        </div>
+      </section>
+
+      <section class="content-section" aria-labelledby="agenda4-title">
+        <div class="section-heading compact"><p class="kicker">Today’s route</p><h2 id="agenda4-title">50-minute agenda</h2></div>
+        <div class="agenda-list">
+          <article><time>00–05</time><div><strong>Memory challenge</strong><p>Recall first, then check what you forgot.</p></div></article>
+          <article><time>05–10</time><div><strong>Teacher demonstration</strong><p>Watch one verified source become two shareable games.</p></div></article>
+          <article><time>10–14</time><div><strong>Source and access</strong><p>Prepare the verified note and pair up if access fails.</p></div></article>
+          <article><time>14–25</time><div><strong>Wordwall Sprint</strong><p>Create and check a rapid-recall activity.</p></div></article>
+          <article><time>25–37</time><div><strong>Educaplay Challenge</strong><p>Create a contrasting activity that requires deeper thinking.</p></div></article>
+          <article><time>37–44</time><div><strong>Quality and peer test</strong><p>Swap links, identify a weakness and repair it.</p></div></article>
+          <article><time>44–50</time><div><strong>Publish and portfolio</strong><p>Test both play links and record the evidence.</p></div></article>
+        </div>
+      </section>
+    </section>
+
     <section class="page" id="portfolio" aria-labelledby="portfolio-title" hidden>
       <div class="portfolio-hero">
         <div>
@@ -556,6 +693,42 @@ My comparison
 5. My final verdict: Gemini Notebook was / was not useful because:</pre>
       </section>
 
+
+      <section class="template-card template-card-quaternary">
+        <div class="template-top">
+          <div><p class="kicker">Session 4 template</p><h2>Copy this below Session 3</h2></div>
+          <button class="button button-outline copy-button" type="button" data-copy-target="portfolio-template-4">⧉ Copy full template</button>
+        </div>
+        <pre id="portfolio-template-4">SESSION 4 — AI STUDY GAMES
+
+My topic and source
+Topic:
+Source title:
+Source link:
+
+My published activities
+Wordwall play link:
+Educaplay play link:
+I tested both links in a private window: Yes / Not yet
+
+How I used AI
+• Tool and AI feature used:
+• What I gave the AI:
+• What the AI generated:
+
+My quality control
+1. One answer I checked against the source:
+2. One mistake, weak question or ambiguity I found:
+3. The change I made:
+4. Feedback received from another team:
+
+My evaluation
+1. Which activity required more retrieval from memory?
+2. Which activity would I genuinely use before an exam?
+3. One limitation of AI-generated study games:
+4. My final verdict:</pre>
+      </section>
+
       <section class="portfolio-values">
         <article><strong>Show the process</strong><p>Keep useful prompts, attempts and improvements.</p></article>
         <article><strong>Be honest</strong><p>Record what worked, what failed and what you changed.</p></article>
@@ -569,3 +742,4 @@ My comparison
   <script src="script.js"></script>
 </body>
 </html>
+
