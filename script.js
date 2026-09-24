@@ -140,6 +140,77 @@ First, introduce yourself as the game master and ask me to confirm my character,
   showToast("Your Knowledge Quest is ready");
 });
 
+const wordwallInstructions = {
+  Quiz: "Create a table with these columns: question, correct answer, distractor 1, distractor 2, distractor 3. Make every distractor plausible but clearly incorrect.",
+  "Match up": "Create a two-column table with 10 items. Column 1 must contain a term or prompt and column 2 its unique matching definition or answer.",
+  Flashcards: "Create a two-column table with 10 cards. Column 1 is the front of the card and column 2 is the short answer on the back.",
+  "Group sort": "Choose 2–4 clear categories and provide 10 items to sort. Show the correct category beside every item. Avoid items that could reasonably fit more than one category."
+};
+
+document.getElementById("build-game-prompts")?.addEventListener("click", () => {
+  const subject = document.getElementById("game-subject").value;
+  const topicInput = document.getElementById("game-topic");
+  const goalInput = document.getElementById("game-goal");
+  const notes = document.getElementById("game-notes").value.trim();
+  const wordwallFormat = document.getElementById("wordwall-format").value;
+  const educaplayFormat = document.getElementById("educaplay-format").value;
+  const topic = topicInput.value.trim();
+  const goal = goalInput.value.trim();
+
+  if (!topic) {
+    topicInput.focus();
+    showToast("Add a specific topic first");
+    return;
+  }
+  if (!goal) {
+    goalInput.focus();
+    showToast("Add the learning goal first");
+    return;
+  }
+
+  const evidenceRule = notes
+    ? `Use only the class information below as your factual source. Do not add facts that are not supported by it.\n\nCLASS INFORMATION:\n${notes}`
+    : "Use accurate, age-appropriate information. At the end, flag any fact or answer that I should verify before publishing.";
+
+  const wordwallPrompt = `Act as a learning-game designer. I am creating a Wordwall ${wordwallFormat} activity for a 15–16-year-old student studying ${subject}.
+
+The specific topic is: ${topic}.
+The learning goal is: ${goal}.
+
+Create exactly 10 items for this activity. Begin with accessible recall and gradually increase the challenge. Use clear, concise language. Test important learning rather than trivia. Avoid ambiguous wording and unnecessarily difficult vocabulary.
+
+${wordwallInstructions[wordwallFormat]}
+
+${evidenceRule}
+
+Present the content in a clean format that I can enter manually into Wordwall. Do not give me general advice or an introduction.`;
+
+  const educaplayPrompt = `Help me write one effective prompt for Educaplay's AI assistant, Ray. Do not create the activity yourself.
+
+The activity will be a ${educaplayFormat} game for a 15–16-year-old student studying ${subject}.
+The specific topic is: ${topic}.
+The learning goal is: ${goal}.
+
+Write the final instruction that I should paste into Ray. Tell Ray to:
+• create approximately 10 items;
+• begin at an accessible level and include some items that require understanding, not guessing;
+• use clear, age-appropriate language;
+• avoid ambiguous questions and answers;
+• provide useful feedback where the format allows it;
+• keep the activity focused on the learning goal;
+• not invent unsupported information.
+
+${evidenceRule}
+
+Output only the final prompt for Ray. Do not include an explanation before or after it.`;
+
+  document.getElementById("wordwall-prompt-output").textContent = wordwallPrompt;
+  document.getElementById("educaplay-prompt-output").textContent = educaplayPrompt;
+  document.getElementById("copy-wordwall-prompt").disabled = false;
+  document.getElementById("copy-educaplay-prompt").disabled = false;
+  showToast("Both Copilot prompts are ready");
+});
+
 document.getElementById("present-button").addEventListener("click", async () => {
   if (!document.fullscreenElement) await document.documentElement.requestFullscreen?.();
   else await document.exitFullscreen?.();
@@ -149,4 +220,3 @@ const requestedPage = location.hash.replace("#", "");
 const initialPage = requestedPage === "session" ? "session1" : requestedPage;
 if (["home", "session1", "session2", "session3", "session4", "portfolio"].includes(initialPage)) showPage(initialPage);
 else showPage("home");
-
