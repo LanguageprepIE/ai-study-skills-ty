@@ -72,3 +72,17 @@ footer{padding:26px 28px 35px;border-top:1px solid var(--line);display:flex;just
 .prompt-assembly{display:grid;grid-template-columns:.8fr 1.2fr;gap:30px;margin:44px 0;padding:38px;background:var(--ink);color:#fff;border-radius:28px 7px;box-shadow:9px 9px 0 var(--cyan)}.prompt-assembly h2{font-size:clamp(30px,4vw,44px);margin:0 0 10px}.prompt-assembly>div>p:last-child{color:#b9c8d1;line-height:1.6}.technical-prompt{padding:24px;background:#122941;border-radius:15px}.technical-prompt>span{font:900 11px var(--mono);color:var(--lime)}.technical-prompt blockquote{margin:15px 0;padding:18px;background:#fff;color:var(--ink);border-left:5px solid var(--lime);border-radius:8px;font:13px/1.6 var(--mono);white-space:pre-wrap}.technical-prompt .button{color:var(--ink);background:var(--lime)}
 .build-route{background:#e8f2f0}.build-route code{font-weight:800;color:var(--cyan-dark)}.github-next{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;background:var(--lime)}.github-next h2{font-size:clamp(30px,4vw,44px);margin:0 0 8px}.github-next p{line-height:1.6}.next-card{padding:24px;background:#fff;border-radius:14px}.next-card strong{display:block;color:var(--cyan-dark);font:900 12px var(--mono);text-transform:uppercase}.next-card p{margin:5px 0 18px}.next-card p:last-child{margin-bottom:0}.template-card-quinary{box-shadow:10px 10px 0 #a6e3d8}
 @media(max-width:1000px){.blueprint-grid{grid-template-columns:repeat(3,1fr)}}@media(max-width:820px){.three-file-grid,.prompt-assembly,.github-next{grid-template-columns:1fr}}@media(max-width:600px){.web-three,.prompt-blueprint,.build-route,.github-next,.prompt-assembly{padding:26px}.blueprint-grid{grid-template-columns:1fr}}
+
+/* Session 5 — guided choice */
+.mission-choice,.feature-menu{margin:44px 0;padding:38px;background:#eef6f4;border-radius:28px 7px}
+.mission-choice .mission-grid{grid-template-columns:repeat(4,1fr)}
+.mission-choice .mission-grid article{background:#fff}
+.mission-choice small{display:block;margin-top:12px;color:var(--muted);line-height:1.5}
+.feature-menu{background:#fff;border:1px solid var(--line)}
+.feature-chips{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0}
+.feature-chips span{padding:10px 14px;border-radius:999px;background:#e8f2f0;border:1px solid var(--line);font-weight:800}
+.teacher-checkpoint{margin:44px 0;padding:28px 32px;background:var(--lime);border-radius:7px 22px;box-shadow:7px 7px 0 var(--ink)}
+.teacher-checkpoint h2{margin:4px 0 8px}
+.teacher-checkpoint p:last-child{margin-bottom:0}
+@media(max-width:820px){.mission-choice .mission-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.mission-choice,.feature-menu{padding:26px}.mission-choice .mission-grid{grid-template-columns:1fr}}
