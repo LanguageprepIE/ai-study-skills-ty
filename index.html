@@ -25,9 +25,10 @@
       <button class="tab-button" type="button" data-page-link="session2" aria-controls="session2">Session 2</button>
       <button class="tab-button" type="button" data-page-link="session3" aria-controls="session3">Session 3</button>
       <button class="tab-button" type="button" data-page-link="session4" aria-controls="session4">Session 4</button>
+      <button class="tab-button" type="button" data-page-link="session5" aria-controls="session5">Session 5</button>
       <button class="tab-button" type="button" data-page-link="portfolio" aria-controls="portfolio">Portfolio</button>
     </div>
-    <span class="ready-label"><span></span> Sessions 1–4 ready</span>
+    <span class="ready-label"><span></span> Sessions 1–5 ready</span>
   </nav>
 
   <main>
@@ -42,6 +43,7 @@
             <button class="button button-outline" type="button" data-page-link="session2">Continue to Session 2 <span aria-hidden="true">→</span></button>
             <button class="button button-outline" type="button" data-page-link="session3">Open Session 3 <span aria-hidden="true">→</span></button>
             <button class="button button-outline" type="button" data-page-link="session4">Open Session 4 <span aria-hidden="true">→</span></button>
+            <button class="button button-outline" type="button" data-page-link="session5">Open Session 5 <span aria-hidden="true">→</span></button>
           </div>
         </div>
         <div class="brain-card">
@@ -61,11 +63,11 @@
         <div class="phase-grid">
           <article class="phase-card active">
             <span class="card-number">01</span><span class="card-icon" aria-hidden="true">◫</span>
-            <h3>Learn</h3><p>Prompt, explain, practise, research and verify.</p><small>Sessions 1–6</small>
+            <h3>Learn</h3><p>Prompt, explain, practise, research and verify.</p><small>Sessions 1–4</small>
           </article>
           <article class="phase-card">
             <span class="card-number">02</span><span class="card-icon" aria-hidden="true">⌘</span>
-            <h3>Build</h3><p>Use GitHub Copilot to turn a real school topic into a useful study website.</p><small>Sessions 7–9 · GitHub Pages</small>
+            <h3>Build</h3><p>Use Microsoft Copilot as a coding partner to design, improve and publish your own website.</p><small>Sessions 5–9 · GitHub Pages</small>
           </article>
           <article class="phase-card">
             <span class="card-number">03</span><span class="card-icon" aria-hidden="true">✦</span>
@@ -581,6 +583,112 @@
       </section>
     </section>
 
+
+    <section class="page" id="session5" aria-labelledby="session5-title" hidden>
+      <div class="session-header">
+        <div>
+          <p class="eyebrow"><span class="session-number">05</span> Build mode begins</p>
+          <h1 id="session5-title">Build your first<br><span>AI-powered website.</span></h1>
+          <p>You choose the idea. Microsoft Copilot helps with the code. You stay in control of the decisions.</p>
+        </div>
+        <aside class="progress-card" data-progress-card="session5">
+          <div><strong data-progress-number>0%</strong><span>lesson complete</span></div>
+          <div class="progress-track" data-progress-track role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span data-progress-bar></span></div>
+          <small>Today is about understanding the three building blocks and creating a strong first draft.</small>
+        </aside>
+      </div>
+
+      <section class="starter-question">
+        <p class="kicker">New phase · Build</p>
+        <h2>Could you build a website without knowing how to code?</h2>
+        <p>Today we test that idea. AI can write code, but you need to decide what the site is for, judge the result and tell the AI what to change.</p>
+      </section>
+
+      <section class="web-three" aria-labelledby="three-files-title">
+        <div class="section-heading"><p class="kicker">First: understand the machine</p><h2 id="three-files-title">A website in three files.</h2><p>You do not need to memorise code. You do need to know what each file is responsible for.</p></div>
+        <div class="three-file-grid">
+          <article><span class="file-tag">&lt;/&gt;</span><h3>index.html</h3><strong>Structure + content</strong><p>Headings, paragraphs, images, buttons and the order of the page.</p><small>Think: the skeleton.</small></article>
+          <article><span class="file-tag">{ }</span><h3>style.css</h3><strong>Appearance</strong><p>Colours, spacing, fonts, cards, layout and how the site adapts to different screens.</p><small>Think: the clothes and design.</small></article>
+          <article><span class="file-tag">JS</span><h3>script.js</h3><strong>Behaviour</strong><p>What happens when someone clicks, types, opens a menu or uses an interactive feature.</p><small>Think: the actions.</small></article>
+        </div>
+        <div class="file-connection"><code>index.html</code><span>→ links to →</span><code>style.css</code><span>+</span><code>script.js</code></div>
+      </section>
+
+      <section class="prompt-blueprint" aria-labelledby="blueprint-title">
+        <div class="section-heading"><p class="kicker">Your job · not Copilot's</p><h2 id="blueprint-title">Design the idea before you ask for code.</h2><p>Write short answers first. These choices become the human part of your prompt.</p></div>
+        <div class="blueprint-grid">
+          <article><span>01</span><h3>Purpose</h3><p>What is your website about? What should it help someone do, learn or explore?</p></article>
+          <article><span>02</span><h3>Audience</h3><p>Who is it for? Students, fans, beginners, visitors, gamers…?</p></article>
+          <article><span>03</span><h3>Content</h3><p>Choose 3–5 sections your site genuinely needs.</p></article>
+          <article><span>04</span><h3>Style</h3><p>Describe the look: modern, calm, bold, playful, minimal, sporty…</p></article>
+          <article><span>05</span><h3>Feature</h3><p>Add one useful interaction: quiz, reveal button, filter, counter, random tip…</p></article>
+        </div>
+      </section>
+
+      <section class="prompt-assembly" aria-labelledby="assembly-title">
+        <div><p class="kicker">Prompt engineering</p><h2 id="assembly-title">You provide the brief. We provide the technical language.</h2><p>Combine your five decisions with this technical ending. Do not ask Copilot to invent your whole idea for you.</p></div>
+        <div class="technical-prompt">
+          <span>ADD THIS TO YOUR OWN BRIEF</span>
+          <blockquote id="website-tech-prompt">Build this as a beginner-friendly website using three separate files: index.html, style.css and script.js. Make sure index.html correctly links to the CSS and JavaScript files. Make the design responsive so it works on a phone and a computer. Add short comments that explain the main parts of the code.
+
+Return the code in three clearly labelled code blocks, one for each file. Do not combine the files.</blockquote>
+          <button class="button button-primary copy-button" type="button" data-copy-target="website-tech-prompt">⧉ Copy technical ending</button>
+        </div>
+      </section>
+
+      <section class="build-route" aria-labelledby="build-route-title">
+        <div class="section-heading"><p class="kicker">Build lab</p><h2 id="build-route-title">From prompt to three real files.</h2></div>
+        <div class="station-list">
+          <article><span class="station-number">01</span><div><h3>Write your brief</h3><p>Turn your Purpose, Audience, Content, Style and Feature choices into a clear request. Add the technical ending above.</p></div></article>
+          <article><span class="station-number">02</span><div><h3>Ask Microsoft Copilot</h3><p>Paste the complete prompt into Copilot. You should receive three labelled blocks of text: HTML, CSS and JavaScript.</p><a class="button button-outline" href="https://m365.cloud.microsoft/chat" target="_blank" rel="noopener">Open Copilot ↗</a></div></article>
+          <article><span class="station-number">03</span><div><h3>Create the three files</h3><p>Create <code>index.html</code>, <code>style.css</code> and <code>script.js</code>. Copy only the matching code into each file — not the labels or the backticks.</p></div></article>
+          <article><span class="station-number">04</span><div><h3>Test before improving</h3><p>Open the page. Does the content appear? Does the design load? Does the interactive feature work? If something fails, describe the problem to Copilot instead of starting again.</p></div></article>
+        </div>
+      </section>
+
+      <section class="quality-gate" aria-labelledby="iteration-title">
+        <div><p class="kicker">The important part</p><h2 id="iteration-title">The first draft is not the finished website.</h2><p>Choose at least one meaningful change and ask Copilot to help you make it. Keep the conversation going.</p></div>
+        <div class="quality-grid">
+          <article><span>?</span><strong>Diagnose</strong><p>“My button does nothing. Help me work out why.”</p></article>
+          <article><span>↗</span><strong>Improve</strong><p>“The page feels too plain. Suggest three specific improvements.”</p></article>
+          <article><span>◎</span><strong>Control</strong><p>“I like option 2. Tell me which file needs changing and give me only that change.”</p></article>
+          <article><span>✓</span><strong>Test</strong><p>“Check whether this will work well on a phone and explain any problem.”</p></article>
+        </div>
+      </section>
+
+      <section class="github-next">
+        <div><p class="kicker">Not today’s main challenge</p><h2>Where does GitHub fit?</h2><p>GitHub will be the home of your project and, later, GitHub Pages will give your website a public link. A free GitHub account is enough for this project — you do not need GitHub Education or GitHub Copilot.</p></div>
+        <div class="next-card"><strong>Today</strong><p>Design → prompt → generate → create 3 files → test → improve.</p><strong>Next</strong><p>GitHub account → repository → upload the 3 files → GitHub Pages → your own URL.</p></div>
+      </section>
+
+      <section class="task-checklist" aria-labelledby="checklist5-title">
+        <div class="section-heading compact"><p class="kicker">Your progress</p><h2 id="checklist5-title">Session 5 checklist</h2></div>
+        <div class="checklist-grid">
+          <label><input type="checkbox" class="task-check" data-task-group="session5"> <span>Explain the job of HTML, CSS and JavaScript</span></label>
+          <label><input type="checkbox" class="task-check" data-task-group="session5"> <span>Choose my website purpose and audience</span></label>
+          <label><input type="checkbox" class="task-check" data-task-group="session5"> <span>Choose content, style and one interactive feature</span></label>
+          <label><input type="checkbox" class="task-check" data-task-group="session5"> <span>Build my own prompt and add the technical ending</span></label>
+          <label><input type="checkbox" class="task-check" data-task-group="session5"> <span>Get three separate code blocks from Copilot</span></label>
+          <label><input type="checkbox" class="task-check" data-task-group="session5"> <span>Create and test all three files</span></label>
+          <label><input type="checkbox" class="task-check" data-task-group="session5"> <span>Make at least one meaningful improvement</span></label>
+          <label><input type="checkbox" class="task-check" data-task-group="session5"> <span>Record the process in my portfolio</span></label>
+        </div>
+      </section>
+
+      <section class="content-section" aria-labelledby="agenda5-title">
+        <div class="section-heading compact"><p class="kicker">Today’s route</p><h2 id="agenda5-title">50-minute agenda</h2></div>
+        <div class="agenda-list">
+          <article><time>00–07</time><div><strong>Three-file reveal</strong><p>Meet HTML, CSS and JavaScript and see how they connect.</p></div></article>
+          <article><time>07–15</time><div><strong>Website brief</strong><p>Choose purpose, audience, content, style and one feature.</p></div></article>
+          <article><time>15–22</time><div><strong>Build the prompt</strong><p>Turn your decisions into a clear Copilot brief and add the technical instructions.</p></div></article>
+          <article><time>22–34</time><div><strong>First build</strong><p>Generate the code and create the three matching files.</p></div></article>
+          <article><time>34–43</time><div><strong>Test + repair</strong><p>Find what works, describe one weakness and use Copilot to improve it.</p></div></article>
+          <article><time>43–48</time><div><strong>Partner test</strong><p>Show the site to a partner and make one final useful change.</p></div></article>
+          <article><time>48–50</time><div><strong>Portfolio</strong><p>Record your brief, prompt, improvement and what each file does.</p></div></article>
+        </div>
+      </section>
+    </section>
+
     <section class="page" id="portfolio" aria-labelledby="portfolio-title" hidden>
       <div class="portfolio-hero">
         <div>
@@ -726,6 +834,45 @@ My evaluation
 3. Which game would I genuinely use before an exam?
 4. One limitation of AI-generated study games:
 5. My final verdict:</pre>
+      </section>
+
+
+      <section class="template-card template-card-quinary">
+        <div class="template-top">
+          <div><p class="kicker">Session 5 template</p><h2>Copy this below Session 4</h2></div>
+          <button class="button button-outline copy-button" type="button" data-copy-target="portfolio-template-5">⧉ Copy full template</button>
+        </div>
+        <pre id="portfolio-template-5">SESSION 5 — BUILD YOUR FIRST WEBSITE
+
+My website brief
+Purpose:
+Audience:
+Content / sections:
+Style:
+Interactive feature:
+
+My full Copilot prompt
+[Paste the prompt you created]
+
+The three files
+index.html is responsible for:
+style.css is responsible for:
+script.js is responsible for:
+
+Testing
+What worked on the first attempt:
+One problem or weakness I found:
+
+My improvement prompt
+[Paste one follow-up instruction you gave Copilot]
+
+What changed after my improvement:
+
+My reflection
+1. Which decisions were mine and which jobs did AI do?
+2. What did I understand about the code even though I did not write it from scratch?
+3. What would I improve next?
+4. One thing I need to remember before publishing publicly:</pre>
       </section>
 
       <section class="portfolio-values">
