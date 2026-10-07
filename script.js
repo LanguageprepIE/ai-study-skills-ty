@@ -218,5 +218,5 @@ document.getElementById("present-button").addEventListener("click", async () => 
 
 const requestedPage = location.hash.replace("#", "");
 const initialPage = requestedPage === "session" ? "session1" : requestedPage;
-if (["home", "session1", "session2", "session3", "session4", "session5", "portfolio"].includes(initialPage)) showPage(initialPage);
+if (["home", "session1", "session2", "session3", "session4", "session5", "session6", "portfolio"].includes(initialPage)) showPage(initialPage);
 else showPage("home");
