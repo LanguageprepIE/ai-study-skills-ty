@@ -26,9 +26,10 @@
       <button class="tab-button" type="button" data-page-link="session3" aria-controls="session3">Session 3</button>
       <button class="tab-button" type="button" data-page-link="session4" aria-controls="session4">Session 4</button>
       <button class="tab-button" type="button" data-page-link="session5" aria-controls="session5">Session 5</button>
+      <button class="tab-button" type="button" data-page-link="session6" aria-controls="session6">Session 6</button>
       <button class="tab-button" type="button" data-page-link="portfolio" aria-controls="portfolio">Portfolio</button>
     </div>
-    <span class="ready-label"><span></span> Sessions 1–5 ready</span>
+    <span class="ready-label"><span></span> Sessions 1–6 ready</span>
   </nav>
 
   <main>
@@ -44,6 +45,7 @@
             <button class="button button-outline" type="button" data-page-link="session3">Open Session 3 <span aria-hidden="true">→</span></button>
             <button class="button button-outline" type="button" data-page-link="session4">Open Session 4 <span aria-hidden="true">→</span></button>
             <button class="button button-outline" type="button" data-page-link="session5">Open Session 5 <span aria-hidden="true">→</span></button>
+            <button class="button button-outline" type="button" data-page-link="session6">Open Session 6 <span aria-hidden="true">→</span></button>
           </div>
         </div>
         <div class="brain-card">
@@ -585,108 +587,33 @@
 
 
     <section class="page" id="session5" aria-labelledby="session5-title" hidden>
-      <div class="session-header">
-        <div>
-          <p class="eyebrow"><span class="session-number">05</span> Build mode begins</p>
-          <h1 id="session5-title">Build your first<br><span>AI-powered website.</span></h1>
-          <p>You choose the idea. Microsoft Copilot helps with the code. You stay in control of the decisions.</p>
-        </div>
-        <aside class="progress-card" data-progress-card="session5">
-          <div><strong data-progress-number>0%</strong><span>lesson complete</span></div>
-          <div class="progress-track" data-progress-track role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span data-progress-bar></span></div>
-          <small>Today is about understanding the three building blocks and creating a strong first draft.</small>
-        </aside>
-      </div>
+      <div class="session-header"><div><p class="eyebrow"><span class="session-number">05</span> Build + publish</p><h1 id="session5-title">Build your first website.<br><span>Put it on the internet.</span></h1><p>You choose the idea. Microsoft Copilot generates the first draft. GitHub holds the three files and GitHub Pages turns them into a real website.</p></div><aside class="progress-card" data-progress-card="session5"><div><strong data-progress-number>0%</strong><span>lesson complete</span></div><div class="progress-track" data-progress-track><span data-progress-bar></span></div><small>Success today = a working first version with its own web address.</small></aside></div>
+      <section class="web-three"><div class="section-heading"><p class="kicker">Three building blocks</p><h2>A website in three files.</h2></div><div class="three-file-grid"><article><span class="file-tag">&lt;/&gt;</span><h3>index.html</h3><strong>Content + structure</strong><p>Text, sections, buttons and page structure.</p></article><article><span class="file-tag">{ }</span><h3>style.css</h3><strong>Appearance</strong><p>Colours, fonts, spacing and layout.</p></article><article><span class="file-tag">JS</span><h3>script.js</h3><strong>Behaviour</strong><p>What happens when someone interacts.</p></article></div></section>
+      <section class="prompt-blueprint"><div class="section-heading"><p class="kicker">Your decisions</p><h2>Design the idea before asking for code.</h2></div><div class="blueprint-grid"><article><span>01</span><h3>Purpose</h3><p>What should it help someone learn or do?</p></article><article><span>02</span><h3>Audience</h3><p>Who is it for?</p></article><article><span>03</span><h3>Content</h3><p>Choose 3–5 sections.</p></article><article><span>04</span><h3>Style</h3><p>Describe the look.</p></article><article><span>05</span><h3>Feature</h3><p>Choose one useful interaction.</p></article></div></section>
+      <section class="prompt-assembly"><div><p class="kicker">Prompt engineering</p><h2>You write the brief. We add the technical instructions.</h2></div><div class="technical-prompt"><span>ADD THIS TO YOUR BRIEF</span><blockquote id="website-tech-prompt">Build this as a beginner-friendly website using three separate files: index.html, style.css and script.js. Make sure index.html correctly links to the CSS and JavaScript files. Make the design responsive so it works on a phone and a computer. Add short comments that explain the main parts of the code.
 
-      <section class="starter-question">
-        <p class="kicker">New phase · Build</p>
-        <h2>Could you build a website without knowing how to code?</h2>
-        <p>Today we test that idea. AI can write code, but you need to decide what the site is for, judge the result and tell the AI what to change.</p>
-      </section>
+Return the code in three clearly labelled code blocks, one for each file. Do not combine the files.</blockquote><button class="button button-primary copy-button" type="button" data-copy-target="website-tech-prompt">⧉ Copy technical ending</button></div></section>
+      <section class="build-route"><div class="section-heading"><p class="kicker">1 · Generate</p><h2>Get the first draft from Microsoft Copilot.</h2></div><div class="station-list"><article><span class="station-number">01</span><div><h3>Build the full prompt</h3><p>Combine your five decisions with the technical ending.</p></div></article><article><span class="station-number">02</span><div><h3>Generate three blocks</h3><p>Use Microsoft Copilot and check that you receive HTML, CSS and JavaScript separately.</p><a class="button button-outline" href="https://m365.cloud.microsoft/chat" target="_blank" rel="noopener">Open Microsoft Copilot ↗</a></div></article></div></section>
+      <section class="github-next"><div><p class="kicker">2 · GitHub</p><h2>Give the code a home.</h2><p>Create or sign in to a free GitHub account. GitHub Education and GitHub Copilot are not required.</p></div><div class="next-card"><strong>Privacy</strong><p>Use a sensible username and do not put personal information in the public project.</p><a class="button button-outline" href="https://github.com/signup" target="_blank" rel="noopener">Open GitHub ↗</a></div></section>
+      <section class="build-route"><div class="section-heading"><p class="kicker">3 · Repository</p><h2>Create the three files in GitHub.</h2></div><div class="station-list"><article><span class="station-number">03</span><div><h3>Create a public repository</h3><p>Use a simple project name without personal information.</p></div></article><article><span class="station-number">04</span><div><h3>index.html</h3><p>Create the file, paste only the HTML block and commit.</p></div></article><article><span class="station-number">05</span><div><h3>style.css</h3><p>Create the file, paste only the CSS block and commit.</p></div></article><article><span class="station-number">06</span><div><h3>script.js</h3><p>Create the file, paste only the JavaScript block and commit.</p></div></article></div></section>
+      <section class="share-lab"><div class="section-heading compact"><p class="kicker">4 · Publish</p><h2>Turn the repository into a real website.</h2></div><div class="share-route"><article><span>01</span><h3>Settings</h3><p>Open repository Settings.</p></article><article><span>02</span><h3>Pages</h3><p>Choose deployment from a branch.</p></article><article><span>03</span><h3>main / root</h3><p>Select main and the root folder, then save.</p></article><article><span>04</span><h3>Visit</h3><p>Wait for publication and open your web address.</p></article></div><p class="public-warning"><strong>Privacy check:</strong> the site is public. No surnames, school email addresses, photographs or private information.</p></section>
+      <section class="task-checklist"><div class="section-heading compact"><p class="kicker">Your progress</p><h2>Session 5 checklist</h2></div><div class="checklist-grid"><label><input type="checkbox" class="task-check" data-task-group="session5"> Understand the three files</label><label><input type="checkbox" class="task-check" data-task-group="session5"> Design my website brief</label><label><input type="checkbox" class="task-check" data-task-group="session5"> Generate three code blocks</label><label><input type="checkbox" class="task-check" data-task-group="session5"> Sign in to GitHub</label><label><input type="checkbox" class="task-check" data-task-group="session5"> Create repository and three files</label><label><input type="checkbox" class="task-check" data-task-group="session5"> Enable GitHub Pages</label><label><input type="checkbox" class="task-check" data-task-group="session5"> Open my live website</label><label><input type="checkbox" class="task-check" data-task-group="session5"> Save its URL in my portfolio</label></div></section>
+      <section class="content-section"><div class="section-heading compact"><p class="kicker">Today’s route</p><h2>50-minute agenda</h2></div><div class="agenda-list"><article><time>00–06</time><div><strong>Three files</strong><p>Understand HTML, CSS and JavaScript.</p></div></article><article><time>06–13</time><div><strong>Website brief</strong><p>Make the five human decisions.</p></div></article><article><time>13–19</time><div><strong>Copilot</strong><p>Generate the three code blocks.</p></div></article><article><time>19–27</time><div><strong>GitHub setup</strong><p>Sign in and create a repository.</p></div></article><article><time>27–38</time><div><strong>Three files</strong><p>Create and commit the code.</p></div></article><article><time>38–46</time><div><strong>Go live</strong><p>Enable GitHub Pages.</p></div></article><article><time>46–50</time><div><strong>Test + record</strong><p>Open the site and save its URL.</p></div></article></div></section>
+    </section>
 
-      <section class="web-three" aria-labelledby="three-files-title">
-        <div class="section-heading"><p class="kicker">First: understand the machine</p><h2 id="three-files-title">A website in three files.</h2><p>You do not need to memorise code. You do need to know what each file is responsible for.</p></div>
-        <div class="three-file-grid">
-          <article><span class="file-tag">&lt;/&gt;</span><h3>index.html</h3><strong>Structure + content</strong><p>Headings, paragraphs, images, buttons and the order of the page.</p><small>Think: the skeleton.</small></article>
-          <article><span class="file-tag">{ }</span><h3>style.css</h3><strong>Appearance</strong><p>Colours, spacing, fonts, cards, layout and how the site adapts to different screens.</p><small>Think: the clothes and design.</small></article>
-          <article><span class="file-tag">JS</span><h3>script.js</h3><strong>Behaviour</strong><p>What happens when someone clicks, types, opens a menu or uses an interactive feature.</p><small>Think: the actions.</small></article>
-        </div>
-        <div class="file-connection"><code>index.html</code><span>→ links to →</span><code>style.css</code><span>+</span><code>script.js</code></div>
-      </section>
+    <section class="page" id="session6" aria-labelledby="session6-title" hidden>
+      <div class="session-header"><div><p class="eyebrow"><span class="session-number">06</span> Test · critique · improve</p><h1 id="session6-title">Your website works.<br><span>Now make it better.</span></h1><p>Test the first version, decide what needs improving and use Copilot for targeted changes instead of starting again.</p></div><aside class="progress-card" data-progress-card="session6"><div><strong data-progress-number>0%</strong><span>lesson complete</span></div><div class="progress-track" data-progress-track><span data-progress-bar></span></div><small>The goal is better decisions, not simply more code.</small></aside></div>
+      <section class="quality-gate"><div><p class="kicker">Website audit</p><h2>Do not change anything yet.</h2><p>Test first. Find evidence before writing the next prompt.</p></div><div class="quality-grid"><article><span>✓</span><strong>Accuracy</strong><p>Is the information correct?</p></article><article><span>?</span><strong>Clarity</strong><p>Can the audience understand it?</p></article><article><span>◎</span><strong>Learning</strong><p>Does it genuinely help someone learn?</p></article><article><span>↗</span><strong>Function</strong><p>Do buttons and interactions work?</p></article></div></section>
+      <section class="peer-test"><div><p class="kicker">Human testing</p><h2>Swap websites with a partner.</h2></div><ol><li>Find one thing that works well.</li><li>Find one thing that is confusing or weak.</li><li>Try every interactive feature.</li><li>Suggest one improvement that makes the site more useful.</li></ol><div class="fact-check"><span>✓</span><p><strong>Rule:</strong> a colour change alone does not count. At least one improvement must affect content, usability, accuracy or learning.</p></div></section>
+      <section class="web-three"><div class="section-heading"><p class="kicker">Before prompting</p><h2>Which file probably needs changing?</h2></div><div class="three-file-grid"><article><span class="file-tag">&lt;/&gt;</span><h3>HTML</h3><p>Words, sections or structure.</p></article><article><span class="file-tag">{ }</span><h3>CSS</h3><p>Colours, spacing or layout.</p></article><article><span class="file-tag">JS</span><h3>JavaScript</h3><p>Quiz, button or interactive behaviour.</p></article></div></section>
+      <section class="prompt-assembly"><div><p class="kicker">Targeted prompting</p><h2>Do not regenerate the whole website.</h2><p>Describe the problem and the result you want.</p></div><div class="technical-prompt"><span>FOLLOW-UP PROMPT PATTERN</span><blockquote id="repair-prompt">Here is a problem with my website: [describe the problem].
 
-      <section class="prompt-blueprint" aria-labelledby="blueprint-title">
-        <div class="section-heading"><p class="kicker">Your job · not Copilot's</p><h2 id="blueprint-title">Design the idea before you ask for code.</h2><p>Write short answers first. These choices become the human part of your prompt.</p></div>
-        <div class="blueprint-grid">
-          <article><span>01</span><h3>Purpose</h3><p>What is your website about? What should it help someone do, learn or explore?</p></article>
-          <article><span>02</span><h3>Audience</h3><p>Who is it for? Students, fans, beginners, visitors, gamers…?</p></article>
-          <article><span>03</span><h3>Content</h3><p>Choose 3–5 sections your site genuinely needs.</p></article>
-          <article><span>04</span><h3>Style</h3><p>Describe the look: modern, calm, bold, playful, minimal, sporty…</p></article>
-          <article><span>05</span><h3>Feature</h3><p>Add one useful interaction: quiz, reveal button, filter, counter, random tip…</p></article>
-        </div>
-      </section>
+I want this result: [describe the improvement].
 
-      <section class="prompt-assembly" aria-labelledby="assembly-title">
-        <div><p class="kicker">Prompt engineering</p><h2 id="assembly-title">You provide the brief. We provide the technical language.</h2><p>Combine your five decisions with this technical ending. Do not ask Copilot to invent your whole idea for you.</p></div>
-        <div class="technical-prompt">
-          <span>ADD THIS TO YOUR OWN BRIEF</span>
-          <blockquote id="website-tech-prompt">Build this as a beginner-friendly website using three separate files: index.html, style.css and script.js. Make sure index.html correctly links to the CSS and JavaScript files. Make the design responsive so it works on a phone and a computer. Add short comments that explain the main parts of the code.
-
-Return the code in three clearly labelled code blocks, one for each file. Do not combine the files.</blockquote>
-          <button class="button button-primary copy-button" type="button" data-copy-target="website-tech-prompt">⧉ Copy technical ending</button>
-        </div>
-      </section>
-
-      <section class="build-route" aria-labelledby="build-route-title">
-        <div class="section-heading"><p class="kicker">Build lab</p><h2 id="build-route-title">From prompt to three real files.</h2></div>
-        <div class="station-list">
-          <article><span class="station-number">01</span><div><h3>Write your brief</h3><p>Turn your Purpose, Audience, Content, Style and Feature choices into a clear request. Add the technical ending above.</p></div></article>
-          <article><span class="station-number">02</span><div><h3>Ask Microsoft Copilot</h3><p>Paste the complete prompt into Copilot. You should receive three labelled blocks of text: HTML, CSS and JavaScript.</p><a class="button button-outline" href="https://m365.cloud.microsoft/chat" target="_blank" rel="noopener">Open Copilot ↗</a></div></article>
-          <article><span class="station-number">03</span><div><h3>Create the three files</h3><p>Create <code>index.html</code>, <code>style.css</code> and <code>script.js</code>. Copy only the matching code into each file — not the labels or the backticks.</p></div></article>
-          <article><span class="station-number">04</span><div><h3>Test before improving</h3><p>Open the page. Does the content appear? Does the design load? Does the interactive feature work? If something fails, describe the problem to Copilot instead of starting again.</p></div></article>
-        </div>
-      </section>
-
-      <section class="quality-gate" aria-labelledby="iteration-title">
-        <div><p class="kicker">The important part</p><h2 id="iteration-title">The first draft is not the finished website.</h2><p>Choose at least one meaningful change and ask Copilot to help you make it. Keep the conversation going.</p></div>
-        <div class="quality-grid">
-          <article><span>?</span><strong>Diagnose</strong><p>“My button does nothing. Help me work out why.”</p></article>
-          <article><span>↗</span><strong>Improve</strong><p>“The page feels too plain. Suggest three specific improvements.”</p></article>
-          <article><span>◎</span><strong>Control</strong><p>“I like option 2. Tell me which file needs changing and give me only that change.”</p></article>
-          <article><span>✓</span><strong>Test</strong><p>“Check whether this will work well on a phone and explain any problem.”</p></article>
-        </div>
-      </section>
-
-      <section class="github-next">
-        <div><p class="kicker">Not today’s main challenge</p><h2>Where does GitHub fit?</h2><p>GitHub will be the home of your project and, later, GitHub Pages will give your website a public link. A free GitHub account is enough for this project — you do not need GitHub Education or GitHub Copilot.</p></div>
-        <div class="next-card"><strong>Today</strong><p>Design → prompt → generate → create 3 files → test → improve.</p><strong>Next</strong><p>GitHub account → repository → upload the 3 files → GitHub Pages → your own URL.</p></div>
-      </section>
-
-      <section class="task-checklist" aria-labelledby="checklist5-title">
-        <div class="section-heading compact"><p class="kicker">Your progress</p><h2 id="checklist5-title">Session 5 checklist</h2></div>
-        <div class="checklist-grid">
-          <label><input type="checkbox" class="task-check" data-task-group="session5"> <span>Explain the job of HTML, CSS and JavaScript</span></label>
-          <label><input type="checkbox" class="task-check" data-task-group="session5"> <span>Choose my website purpose and audience</span></label>
-          <label><input type="checkbox" class="task-check" data-task-group="session5"> <span>Choose content, style and one interactive feature</span></label>
-          <label><input type="checkbox" class="task-check" data-task-group="session5"> <span>Build my own prompt and add the technical ending</span></label>
-          <label><input type="checkbox" class="task-check" data-task-group="session5"> <span>Get three separate code blocks from Copilot</span></label>
-          <label><input type="checkbox" class="task-check" data-task-group="session5"> <span>Create and test all three files</span></label>
-          <label><input type="checkbox" class="task-check" data-task-group="session5"> <span>Make at least one meaningful improvement</span></label>
-          <label><input type="checkbox" class="task-check" data-task-group="session5"> <span>Record the process in my portfolio</span></label>
-        </div>
-      </section>
-
-      <section class="content-section" aria-labelledby="agenda5-title">
-        <div class="section-heading compact"><p class="kicker">Today’s route</p><h2 id="agenda5-title">50-minute agenda</h2></div>
-        <div class="agenda-list">
-          <article><time>00–07</time><div><strong>Three-file reveal</strong><p>Meet HTML, CSS and JavaScript and see how they connect.</p></div></article>
-          <article><time>07–15</time><div><strong>Website brief</strong><p>Choose purpose, audience, content, style and one feature.</p></div></article>
-          <article><time>15–22</time><div><strong>Build the prompt</strong><p>Turn your decisions into a clear Copilot brief and add the technical instructions.</p></div></article>
-          <article><time>22–34</time><div><strong>First build</strong><p>Generate the code and create the three matching files.</p></div></article>
-          <article><time>34–43</time><div><strong>Test + repair</strong><p>Find what works, describe one weakness and use Copilot to improve it.</p></div></article>
-          <article><time>43–48</time><div><strong>Partner test</strong><p>Show the site to a partner and make one final useful change.</p></div></article>
-          <article><time>48–50</time><div><strong>Portfolio</strong><p>Record your brief, prompt, improvement and what each file does.</p></div></article>
-        </div>
-      </section>
+First tell me which file needs to change: index.html, style.css, script.js, or more than one. Then give me only the code I need to replace or add, and explain briefly where it goes. Do not rewrite the whole website.</blockquote><button class="button button-primary copy-button" type="button" data-copy-target="repair-prompt">⧉ Copy prompt pattern</button></div></section>
+      <section class="build-route"><div class="section-heading"><p class="kicker">Improvement loop</p><h2>Change → commit → refresh → test.</h2></div><div class="station-list"><article><span class="station-number">01</span><div><h3>Choose a meaningful problem</h3><p>Use your audit and partner feedback.</p></div></article><article><span class="station-number">02</span><div><h3>Ask Copilot</h3><p>Request a targeted change and predict which file is involved.</p></div></article><article><span class="station-number">03</span><div><h3>Edit + commit</h3><p>Change the correct GitHub file and write a short commit message.</p></div></article><article><span class="station-number">04</span><div><h3>Refresh + test</h3><p>Check the published site. Did it solve the problem without breaking something else?</p></div></article><article><span class="station-number">05</span><div><h3>Repeat</h3><p>Make one more meaningful improvement.</p></div></article></div></section>
+      <section class="task-checklist"><div class="section-heading compact"><p class="kicker">Your progress</p><h2>Session 6 checklist</h2></div><div class="checklist-grid"><label><input type="checkbox" class="task-check" data-task-group="session6"> Audit my live website</label><label><input type="checkbox" class="task-check" data-task-group="session6"> Receive partner feedback</label><label><input type="checkbox" class="task-check" data-task-group="session6"> Choose a meaningful improvement</label><label><input type="checkbox" class="task-check" data-task-group="session6"> Predict the file involved</label><label><input type="checkbox" class="task-check" data-task-group="session6"> Use a targeted Copilot prompt</label><label><input type="checkbox" class="task-check" data-task-group="session6"> Commit and test the change</label><label><input type="checkbox" class="task-check" data-task-group="session6"> Make a second improvement</label><label><input type="checkbox" class="task-check" data-task-group="session6"> Record evidence in my portfolio</label></div></section>
+      <section class="content-section"><div class="section-heading compact"><p class="kicker">Today’s route</p><h2>50-minute agenda</h2></div><div class="agenda-list"><article><time>00–06</time><div><strong>Audit</strong><p>Test before touching code.</p></div></article><article><time>06–14</time><div><strong>Partner test</strong><p>Swap URLs and collect feedback.</p></div></article><article><time>14–19</time><div><strong>Choose + predict</strong><p>Select a problem and the likely file.</p></div></article><article><time>19–31</time><div><strong>Improvement 1</strong><p>Prompt, edit, commit and test.</p></div></article><article><time>31–42</time><div><strong>Improvement 2</strong><p>Repeat the loop.</p></div></article><article><time>42–47</time><div><strong>Final test</strong><p>Check everything again.</p></div></article><article><time>47–50</time><div><strong>Portfolio</strong><p>Record before/after evidence.</p></div></article></div></section>
     </section>
 
     <section class="page" id="portfolio" aria-labelledby="portfolio-title" hidden>
