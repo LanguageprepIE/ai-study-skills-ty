@@ -35,8 +35,19 @@ document.querySelectorAll("[data-copy-target]").forEach((button) => {
   button.addEventListener("click", async () => {
     const target = document.getElementById(button.dataset.copyTarget);
     if (!target) return;
-    await navigator.clipboard.writeText(target.innerText.trim());
-    showToast("Copied to clipboard");
+    try {
+      await navigator.clipboard.writeText(target.innerText.trim());
+      showToast("Copied to clipboard");
+    } catch {
+      showPage("portfolio" === target.closest(".page")?.id ? "portfolio" : target.closest(".page")?.id || "home");
+      target.scrollIntoView({ block: "center" });
+      const range = document.createRange();
+      range.selectNodeContents(target);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      showToast("Text selected — copy it manually");
+    }
   });
 });
 
@@ -218,5 +229,59 @@ document.getElementById("present-button").addEventListener("click", async () => 
 
 const requestedPage = location.hash.replace("#", "");
 const initialPage = requestedPage === "session" ? "session1" : requestedPage;
-if (["home", "session1", "session2", "session3", "session4", "session5", "session6", "portfolio"].includes(initialPage)) showPage(initialPage);
+if (["home", "session1", "session2", "session3", "session4", "session5", "session6", "session7", "portfolio"].includes(initialPage)) showPage(initialPage);
 else showPage("home");
+
+// Session 5: browser-local Arcade prompt builder. No account details are collected.
+const arcadeExamples = {
+  spanish: { subject: 'Spanish', topic: 'Spanish daily routine vocabulary', goal: 'Match Spanish phrases with their English meanings', type: 'Matching', notes: 'me despierto = I wake up\nme levanto = I get up\nme ducho = I have a shower\nme visto = I get dressed\ndesayuno = I have breakfast\nvoy al colegio = I go to school\nhago los deberes = I do my homework\nme acuesto = I go to bed' },
+  science: { subject: 'Science', topic: 'The main parts of animal and plant cells', goal: 'Match each cell part with its main job', type: 'Matching', notes: 'Nucleus: contains genetic material and controls cell activities.\nCytoplasm: where many chemical reactions happen.\nCell membrane: controls substances entering and leaving the cell.\nMitochondria: site of aerobic respiration.\nPlant cell wall: gives support and strength.\nChloroplasts: site of photosynthesis in plant cells.\nLarge permanent vacuole: contains cell sap and helps keep plant cells firm.' },
+  maths: { subject: 'Maths', topic: 'Calculating simple percentages of amounts', goal: 'Calculate 10%, 25% and 50% of an amount', type: 'Multiple choice', notes: '10% of 80 = 8.\n10% of 150 = 15.\n25% of 80 = 20.\n25% of 120 = 30.\n50% of 90 = 45.\n50% of 140 = 70.\nTo find 10%, divide by 10.\nTo find 25%, divide by 4.\nTo find 50%, divide by 2.' },
+  history: { subject: 'History', topic: 'Long-term causes and the trigger of World War I', goal: 'Identify and distinguish the main causes of World War I', type: 'Multiple choice', notes: 'Militarism: European powers expanded their armed forces and competed in an arms race.\nAlliances: agreements between countries helped a local conflict spread.\nImperialism: competition for colonies increased tension between European powers.\nNationalism: intense national pride and nationalist movements contributed to tensions.\nThe assassination of Archduke Franz Ferdinand in Sarajevo in June 1914 was the immediate trigger of the crisis.\nThe assassination was a trigger, not the only cause of the war.' }
+};
+
+function makeArcadePrompt({subject, topic, goal, type, notes}) {
+  const rules = {
+    Matching: 'Create up to 10 matching pairs using the supplied content. Each item must have one unique, clearly correct partner. Do not include two definitions that could match the same term.',
+    'Multiple choice': 'Create up to 10 short questions with three answer options each and exactly one correct answer. Use plausible but clearly incorrect distractors. Give brief helpful feedback where supported.',
+    Flashcards: 'Create up to 10 flashcards. Put one clear question or term on the front and its concise correct answer on the back. Make the cards useful for retrieval from memory.',
+    Sequencing: 'Create a short sequencing game using only steps or events from the supplied content. There must be one unambiguous correct order. If the content has no clear order, do not invent one: explain that I should choose Matching instead.'
+  };
+  return `Create a ${type} study game for Transition Year students aged 15–16 in an Irish secondary school. Keep the learning level suitable for students revising material they have already studied.\n\nSubject: ${subject}.\nSpecific topic: ${topic}.\nLearning goal: ${goal}.\n\n${rules[type]}\n\nUse short, clear instructions in English. Keep subject-specific terms in their original language. Use simple wording and keep the game school-appropriate. Test the learning goal, not obscure trivia.\n\nUse only the study content below as the factual source. Preserve its meanings. Do not add unsupported facts, extra vocabulary or ambiguous questions. Use fewer items if there is not enough content for 10 different items.\n\nSTUDY CONTENT:\n${notes}`;
+}
+
+const arcadeForm = document.getElementById('arcade-form');
+const arcadeOutput = document.getElementById('arcade-output');
+const arcadeStatus = document.getElementById('arcade-builder-status');
+const arcadeCopy = document.getElementById('arcade-copy');
+function arcadeMessage(text) { if (arcadeStatus) arcadeStatus.textContent = text; }
+
+document.getElementById('arcade-load-example')?.addEventListener('click', () => {
+  const example = arcadeExamples[document.getElementById('arcade-example').value];
+  for (const key of ['subject', 'topic', 'goal', 'notes']) document.getElementById('arcade-' + key).value = example[key];
+  document.getElementById('arcade-type').value = example.type;
+  arcadeOutput.value = '';
+  arcadeCopy.disabled = true;
+  arcadeMessage('Example loaded. Make it your own, then press Generate.');
+});
+arcadeForm?.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const values = {};
+  for (const key of ['subject', 'topic', 'goal', 'type', 'notes']) {
+    const field = document.getElementById('arcade-' + key);
+    values[key] = field.value.trim();
+    if (!values[key]) { field.focus(); arcadeMessage('Complete the ' + key + ' field first.'); return; }
+  }
+  arcadeOutput.value = makeArcadePrompt(values);
+  arcadeCopy.disabled = false;
+  arcadeMessage('Ready. Read your prompt, then copy it into Arcade’s topic box. Choose ' + values.type + ' on the next screen.');
+});
+arcadeOutput?.addEventListener('input', () => { arcadeCopy.disabled = !arcadeOutput.value.trim(); });
+arcadeForm?.addEventListener('input', () => {
+  if (arcadeOutput.value.trim()) arcadeMessage('You changed the brief. Press Generate again to update the prompt.');
+});
+arcadeCopy?.addEventListener('click', async () => {
+  if (!arcadeOutput.value.trim()) return;
+  try { await navigator.clipboard.writeText(arcadeOutput.value); arcadeMessage('Copied! Paste into Arcade’s Enter a topic box.'); }
+  catch { arcadeOutput.focus(); arcadeOutput.select(); arcadeMessage('Copy the highlighted text manually, then paste it into Arcade.'); }
+});

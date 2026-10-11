@@ -95,3 +95,21 @@ footer{padding:26px 28px 35px;border-top:1px solid var(--line);display:flex;just
 .feature-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:20px 0}
 .feature-options>div{display:block;padding:12px 14px;background:#e8f2f0;border:1px solid var(--line);border-radius:12px;font-weight:800;line-height:1.35}
 @media(max-width:600px){.feature-options{grid-template-columns:1fr;gap:8px}.feature-options>div{width:100%}}
+
+/* Session 5 — Padlet Arcade independent lesson */
+.arcade-panel{margin:30px 0;padding:32px;background:#fff;border:1px solid var(--line);border-radius:24px 7px;overflow-wrap:anywhere}
+.arcade-panel h2{font-size:clamp(25px,3.5vw,36px);margin:6px 0 18px}
+.arcade-panel p,.arcade-panel li{line-height:1.7}.arcade-panel li{padding-left:5px;margin:12px 0}
+.arcade-start{background:#e8f2f0;border-top:6px solid var(--cyan)}
+.arcade-help{padding:22px;margin-top:22px;background:#eef6f4;border-left:5px solid var(--cyan);border-radius:8px}.arcade-help p:last-child{margin-bottom:0}
+.arcade-help blockquote{margin:14px 0;white-space:pre-wrap;font:14px/1.6 var(--mono)}
+.arcade-example-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:22px 0}
+.arcade-example-grid article{background:#eef6f4;padding:18px;border-radius:12px}.arcade-example-grid h3{margin:0 0 8px}.arcade-example-grid p{margin:0}
+.arcade-builder{background:#f4f7f6;border:1px solid var(--line);border-radius:16px;padding:24px;margin-top:25px}
+.arcade-builder label{display:block;margin:18px 0 8px;font-weight:800}.arcade-builder select,.arcade-builder input,.arcade-builder textarea{width:100%;min-width:0;padding:13px;background:#fff;color:var(--ink);border:1px solid #7c9294;border-radius:9px;font:16px/1.5 var(--sans)}
+.arcade-builder textarea{resize:vertical}.arcade-builder textarea#arcade-output{font-family:var(--mono);font-size:14px;line-height:1.65}
+.arcade-field-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.arcade-hint{font-size:14px;color:var(--muted)}
+.arcade-example-controls{display:flex;gap:12px;align-items:center}.arcade-example-controls select{flex:1}.arcade-example-controls button{flex-shrink:0}
+.arcade-builder .button{margin-top:12px}.arcade-builder [role="status"]{font-weight:700;min-height:26px;margin:12px 0;color:var(--cyan-dark)}
+.arcade-panel summary{cursor:pointer;font-size:19px;font-weight:800;line-height:1.5}
+@media(max-width:600px){.arcade-panel{padding:22px}.arcade-builder{padding:16px}.arcade-example-grid,.arcade-field-grid{grid-template-columns:1fr}.arcade-example-controls{align-items:stretch;flex-direction:column}.arcade-example-controls .button{white-space:normal} .arcade-panel .button{white-space:normal;text-align:center}}
